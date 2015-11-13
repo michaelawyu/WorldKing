@@ -1,0 +1,27 @@
+@(firstName: String)(lastName: String)(emailAddress: String)(mobileNo: String)(address: String)(workExp: String)(eduExp: String)
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/basictemplate.css")")>
+</head>
+<body>
+	<div id="name">
+		<h1 id="firstName">@firstName</h1>
+		<h1 id="lastName">@lastName</h1>
+	</div>
+	<div id="contacts">
+		<h1 id="address">@address</h1>
+		<h1 id="email">@emailAddress</h1>
+		<h1 id="tel">@mobileNo</h1>
+	</div>
+	<div id="workexp">
+		<h1 id="workexp">Work Experience</h1>
+		<p id="workexp">@workExp</p>
+	</div>
+	<div id="eduexp">
+		<h1 id="eduexp">Education Experience</h1>
+		<p id="eduexp">@eduExp</p>
+	</div>
+</body>
+</html>

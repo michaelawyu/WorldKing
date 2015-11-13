@@ -1,0 +1,62 @@
+@(title: String)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>@title</title>
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/genRes.css")">
+</head>
+<body>
+	<div id="header">
+		<img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate">
+		<ul>
+			<li id="Discover"><a class="headerlink" href="">Discover</a></li>
+			<li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
+			<li id="About"><a class="headerlink" href="">About</a></li>
+		</ul>
+	</div>
+	<div id="body">
+		<div id="LeftPanel">
+			<img id="Firework" src="@routes.Assets.versioned("images/firework.png")" alt="Firework">
+			<h1 id="RSG">Ready. Set. Go.</h1>
+			<p id="Guide">Creating a resume with <i>Resumate</i> is easy. Just fill the form on the left side of the screen, sumbit and a resume in PDF format is available for download immediately. It may not be perfect, but it is a good way to start. And we all need a good start.</p>
+		</div>
+	</div>
+		<div id="RightPanel">
+			<form action="/genRes" method="POST">
+				<div id="firstName">
+					<h4 id="firstName">First Name</h4>
+					<input type="text" id="firstName" name="firstName" value="" maxlength="30">
+				</div>
+				<div id="lastName">
+					<h4 id="lastName">Last Name</h4>
+					<input type="text" id="lastName" name="lastName" value="" maxlength="30">
+				</div>
+				<div id="emailAddress">
+					<h4 id="emailAddress">Email Address</h4>
+					<input type="text" id="emailAddress" name="emailAddress" value="" type="email">
+				</div>
+				<div id="mobileNo">
+					<h4 id="mobileNo">Mobile Number</h4>
+					<input type="text" id="mobileNo" name="mobileNo" value="" maxlength="20">
+				</div>
+				<div id="address">
+					<h4 id="address">Address</h4>
+					<input type="text" id="address" name="address" value="" maxlength="40">
+				</div>
+				<div id="eduExp">
+					<h4 id="eduExp">Educational Experience</h4>
+					<textarea id="eduExp" name="eduExp" value=""></textarea>
+				</div>
+				<div id="workExp">
+					<h4 id="workExp">Job Experience</h4>
+					<textarea id="workExp" name="workExp" value=""></textarea>
+				</div>
+				<div id="submit">
+					<input id="submit" type="submit" value="Submit">
+				</div>
+			</form>
+		
+		</div>
+</body>
+</html>
