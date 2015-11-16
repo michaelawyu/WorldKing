@@ -1,12 +1,4 @@
-[0m[[31merror[0m] [0m/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:11: package it.innove.play.pdf does not exist[0m
-[0m[[31merror[0m] [0mit.innove.play.pdf.PdfGenerator[0m
-[0m[[31merror[0m] [0m/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/Template.java:2: package it.innove.play.pdf does not exist[0m
-[0m[[31merror[0m] [0mit.innove.play.pdf.PdfGenerator[0m
-[0m[[31merror[0m] [0m/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/Template.java:18: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   class PdfGenerator[0m
-[0m[[31merror[0m] [0m  location: class models.Template[0m
-[0m[[31merror[0m] [0mPdfGenerator[0m
-[0m[[31merror[0m] [0m/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/Template.java:18: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   class PdfGenerator[0m
-[0m[[31merror[0m] [0m  location: class models.Template[0m
-[0m[[31merror[0m] [0mPdfGenerator[0m
+[0m[[31merror[0m] [0m/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:21: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class viewresume[0m
+[0m[[31merror[0m] [0m  location: package views.html[0m
+[0m[[31merror[0m] [0mviews.html.viewresume[0m

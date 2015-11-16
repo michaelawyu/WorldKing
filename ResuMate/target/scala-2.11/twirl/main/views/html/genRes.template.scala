@@ -41,9 +41,9 @@ Seq[Any](format.raw/*1.17*/("""
 	<div id="header">
 		<img src=""""),_display_(/*11.14*/routes/*11.20*/.Assets.versioned("images/logo.png")),format.raw/*11.56*/("""" class="logo" alt="Resumate">
 		<ul>
-			<li id="Discover"><a class="headerlink" href="">Discover</a></li>
+			<li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
 			<li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
-			<li id="About"><a class="headerlink" href="">About</a></li>
+			<li id="About"><a class="headerlink" href="/about">About</a></li>
 		</ul>
 	</div>
 	<div id="body">
@@ -110,10 +110,10 @@ Seq[Any](format.raw/*1.17*/("""
 object genRes extends genRes_Scope0.genRes
               /*
                   -- GENERATED --
-                  DATE: Fri Nov 13 15:59:13 EST 2015
+                  DATE: Mon Nov 16 17:21:58 EST 2015
                   SOURCE: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/views/genRes.scala.html
-                  HASH: b9eb6ae1d8c7cc308757b34035ce33d68f8210fb
-                  MATRIX: 747->1|857->16|885->18|950->57|975->62|1057->118|1071->124|1134->167|1211->217|1226->223|1283->259|1636->585|1651->591|1712->631
+                  HASH: 04ca626ec4539abe225a40d4838e5def80c5d987
+                  MATRIX: 747->1|857->16|885->18|950->57|975->62|1057->118|1071->124|1134->167|1211->217|1226->223|1283->259|1654->603|1669->609|1730->649
                   LINES: 27->1|32->1|34->3|37->6|37->6|38->7|38->7|38->7|42->11|42->11|42->11|51->20|51->20|51->20
                   -- GENERATED --
               */

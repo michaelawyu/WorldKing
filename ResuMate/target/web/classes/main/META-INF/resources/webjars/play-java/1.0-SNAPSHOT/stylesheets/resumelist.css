@@ -1,0 +1,90 @@
+body {
+	background-image: url("../images/tmpBackground.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left top;
+	background-size: 100%;
+}
+h1#title{
+    color:white;
+    font-family: "PingFang SC", Helvetica;
+    position:absolute;
+    top:20%;
+    left:36%;
+}
+div#channel{
+
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -500px;
+}
+button{
+    width: 20%;
+    height: 18%;
+    text-align: center;
+    float: left;
+    margin: 20px;
+    font-family: "PingFang SC", Helvetica;
+    font-size:24px;
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: rgba(255,255,255,0.2);
+    color:white;
+}
+
+div#header{
+	background-color: hsla(10,0%,0%,0.8);
+	padding: 10px;
+	width: 100%;
+	height: 46px;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+a.headerlink:link{
+	text-decoration: none;
+	color: white;
+}
+a.headerlink:visited{
+	text-decoration: none;
+	color: white;
+}
+li{
+	font-family: "PingFang SC", Helvetica;
+	font-size: 18px;
+}
+li#Discover{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 140px;
+}
+li#Create{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 270px;
+}
+li#About{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 387px;
+}
+img.logo{
+	width: 46px;
+	height: 54px;
+	float: left;
+	position: fixed;
+	top: 5px;
+	left: 36px;
+}

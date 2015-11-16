@@ -1,0 +1,31 @@
+@(allList: List[JobCategory])
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumate: Job Category</title>
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/jobcategory.css")">
+</head>
+<body>
+    <div id="header">
+        <img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate">
+        <ul>
+            <li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
+            <li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
+            <li id="About"><a class="headerlink" href="/about">About</a></li>
+        </ul>
+    </div>
+    <div id="body">
+        <h1 id="title">Pick A Job Category to Start</h1>
+        <div id="channel">
+            @for(p <- allList) {
+                <form action="/resumelist" method="POST">
+                    <button>@p.jobCategoryName</button>
+                    <input type="hidden" name="checked" value="@p.jobCategoryID">
+                </form>
+            }
+        </div>
+    </div>
+</body>
+</html>

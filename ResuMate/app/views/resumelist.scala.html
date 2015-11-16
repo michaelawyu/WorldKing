@@ -1,0 +1,31 @@
+@(allList: List[ResumeList])
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumate: Resume List</title>
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/resumelist.css")">
+</head>
+<body>
+    <div id="header">
+        <img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate">
+        <ul>
+            <li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
+            <li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
+            <li id="About"><a class="headerlink" href="/about">About</a></li>
+        </ul>
+    </div>
+    <div id="body">
+        <h1 id="title">Pick A Resume File to Start</h1>
+        <div id="channel">
+            @for(p <- allList) {
+                <form action="/viewresume" method="POST">
+                    <button>@p.resumeName</button>
+                    <input type="hidden" name="checked" value="@p.resumeUniqueID">
+                </form>
+            }
+        </div>
+    </div>
+</body>
+</html>
