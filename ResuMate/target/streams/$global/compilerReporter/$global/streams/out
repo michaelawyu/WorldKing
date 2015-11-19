@@ -1,4 +1,2 @@
-[0m[[31merror[0m] [0m/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:21: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   class viewresume[0m
-[0m[[31merror[0m] [0m  location: package views.html[0m
-[0m[[31merror[0m] [0mviews.html.viewresume[0m
+[0m[[0minfo[0m] [0m/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: Some input files use or override a deprecated API.[0m
+[0m[[0minfo[0m] [0m/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: Recompile with -Xlint:deprecation for details.[0m

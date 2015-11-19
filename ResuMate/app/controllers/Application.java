@@ -31,7 +31,8 @@ public class Application extends Controller {
     }
 
     public Result displayJobCategory() {
-        //new JobCategory("1","Computer Engineer","Code. Code. Code.").save();
+        new JobCategory("2","Work","Code. Code. Code.").save();
+        new JobCategory("3","Life","Code. Code. Code.").save();
         List<JobCategory> allList = JobCategory.find.all();
         return ok(views.html.jobcategory.render(allList));
     }
