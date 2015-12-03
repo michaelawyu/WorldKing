@@ -8,10 +8,14 @@ import com.avaje.ebean.*;
 @Entity
 public class ResumeList extends Model {
 
-    @Id
+
     public String Location;
+
+    @Id
     public String resumeUniqueID;
+
     public String resumeName;
+    public String checked;
 
     public ResumeList(String Location, String resumeUniqueID, String resumeName) {
         this.Location=Location;

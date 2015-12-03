@@ -10,8 +10,8 @@ import com.avaje.ebean.*;
 @Entity
 public class JobCategory extends Model{
 
-    public String jobCategoryID;
     @Id
+    public String jobCategoryID;
     public String jobCategoryName;
     public String jobCategoryDescription;
 

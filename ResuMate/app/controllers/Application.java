@@ -22,17 +22,16 @@ public class Application extends Controller {
     }
 
     public Result displayResumeList() {
-        //new ResumeList("1","1","Elegant").save();
-        Form<UserSelection> selForm = Form.form(UserSelection.class).bindFromRequest();
-        UserSelection curSelection = selForm.get();
-        List<ResumeList> allList = ResumeList.find.where().eq("Location",curSelection.checked).findList();
+        new ResumeList("1","1","Elegant").save();
+        Form<ResumeList> select = Form.form(ResumeList.class).bindFromRequest();
+        List<ResumeList> allList = ResumeList.find.where().eq("Location",select.get().checked).findList();
 
         return ok(views.html.resumelist.render(allList));
     }
 
     public Result displayJobCategory() {
-        new JobCategory("2","Work","Code. Code. Code.").save();
-        new JobCategory("3","Life","Code. Code. Code.").save();
+        new JobCategory("1","Work","Code. Code. Code.").save();
+        new JobCategory("2","Life","Code. Code. Code.").save();
         List<JobCategory> allList = JobCategory.find.all();
         return ok(views.html.jobcategory.render(allList));
     }
@@ -46,11 +45,11 @@ public class Application extends Controller {
     }
 
     public Result registration() {
-        Form<UserCredential> regForm = Form.form(UserCredential.class).bindFromRequest();
-        UserCredential regUserCredential = regForm.get();
-        if (User.find.where().eq("email",regUserCredential.email).findUnique()==null)
+        Form<User> regForm = Form.form(User.class).bindFromRequest();
+        //UserCredential regUserCredential = regForm.get();
+        if (User.find.where().eq("email",regForm.get().email).findUnique()==null)
         {
-            new User(regUserCredential.email,regUserCredential.password).save();
+            new User(regForm.get().email,regForm.get().password).save();
         }
         else
         {
@@ -60,9 +59,9 @@ public class Application extends Controller {
     }
 
     public Result login() {
-        Form<UserCredential> loginForm = Form.form(UserCredential.class).bindFromRequest();
-        UserCredential loginUserCredential = loginForm.get();
-        if (models.User.find.where().eq("email",loginUserCredential.email).eq("password",loginUserCredential.password).findUnique() == null)
+        Form<User> loginForm = Form.form(User.class).bindFromRequest();
+        //UserCredential loginUserCredential = loginForm.get();
+        if (models.User.find.where().eq("email",loginForm.get().email).eq("password",loginForm.get().password).findUnique() == null)
         {
             return ok(views.html.login.render("Email Address and/or Password is Incorrect."));
         }

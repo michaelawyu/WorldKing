@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+}
+h1#title{
+    color:white;
+    font-family: "PingFang SC", Helvetica;
+    position:absolute;
+    top:20%;
+    left:36%;
+}
+iframe#PDF{
+    position:absolute;
+    top:80%;
+    left:50%;
+    margin-top:-550px;
+    margin-left:-425px;
+    z-index:10;
+}
+
+div#header{
+	background-color: hsla(10,0%,0%,0.8);
+	padding: 10px;
+	width: 100%;
+	height: 46px;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index:20;
+}
+
+a.headerlink:link{
+	text-decoration: none;
+	color: white;
+}
+a.headerlink:visited{
+	text-decoration: none;
+	color: white;
+}
+li{
+	font-family: "PingFang SC", Helvetica;
+	font-size: 18px;
+}
+li#Discover{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 140px;
+}
+li#Create{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 270px;
+}
+li#About{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 387px;
+}
+img.logo{
+	width: 46px;
+	height: 54px;
+	float: left;
+	position: fixed;
+	top: 5px;
+	left: 36px;
+}

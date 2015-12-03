@@ -1,0 +1,28 @@
+[0m[[0mdebug[0m] [0mForking tests - parallelism = false[0m
+[0m[[0mdebug[0m] [0mCreate a single-thread test executor[0m
+[0m[[0mdebug[0m] [0mRunner for com.novocode.junit.JUnitFramework produced 2 initial tasks for 2 tests.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(ApplicationTest, sbt.ForkMain$AnnotatedFingerscan@38727fb5, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m[34mTest run started[0m[0m
+[0m[[0mdebug[0m] [0mTest [33mApplicationTest[0m.[36msimpleCheck[0m started[0m
+[0m[[0mdebug[0m] [0mTest [33mApplicationTest[0m.[36msimpleCheck[0m finished, took 0.003 sec[0m
+[0m[[0mdebug[0m] [0mTest [33mApplicationTest[0m.[36mrenderTemplate[0m started[0m
+[0m[[0mdebug[0m] [0mTest [33mApplicationTest[0m.[36mrenderTemplate[0m finished, took 0.54 sec[0m
+[0m[[0mdebug[0m] [0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 2 total, 0.551s[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(ModelTest, sbt.ForkMain$AnnotatedFingerscan@125661a1, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0m[34mTest run started[0m[0m
+[0m[[0mdebug[0m] [0mTest [33mModelTest[0m.[36mUserAddTest[0m started[0m
+[0m[[0mdebug[0m] [0mTest [33mModelTest[0m.[36mUserAddTest[0m finished, took 2.776 sec[0m
+[0m[[0mdebug[0m] [0mTest [33mModelTest[0m.[36mResumeListAddTest[0m started[0m
+[0m[[0mdebug[0m] [0mTest [33mModelTest[0m.[36mResumeListAddTest[0m finished, took 0.222 sec[0m
+[0m[[0mdebug[0m] [0mTest [33mModelTest[0m.[36mrenderTemplate[0m started[0m
+[0m[[0mdebug[0m] [0mTest [33mModelTest[0m.[36mrenderTemplate[0m finished, took 0.136 sec[0m
+[0m[[0mdebug[0m] [0mTest [33mModelTest[0m.[36mJobCategoryAddTest[0m started[0m
+[0m[[0mdebug[0m] [0mTest [33mModelTest[0m.[36mJobCategoryAddTest[0m finished, took 0.123 sec[0m
+[0m[[0mdebug[0m] [0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 4 total, 3.258s[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 4 events.[0m
+[0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
+[0m[[0minfo[0m] [0mPassed: Total 6, Failed 0, Errors 0, Passed 6[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	ModelTest[0m
+[0m[[0mdebug[0m] [0m	ApplicationTest[0m

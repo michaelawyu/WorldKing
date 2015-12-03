@@ -4,17 +4,18 @@
 # --- !Ups
 
 create table job_category (
-  job_category_name         varchar(255) not null,
-  job_category_id           varchar(255),
+  job_category_id           varchar(255) not null,
+  job_category_name         varchar(255),
   job_category_description  varchar(255),
-  constraint pk_job_category primary key (job_category_name))
+  constraint pk_job_category primary key (job_category_id))
 ;
 
 create table resume_list (
-  location                  varchar(255) not null,
-  resume_unique_id          varchar(255),
+  resume_unique_id          varchar(255) not null,
+  location                  varchar(255),
   resume_name               varchar(255),
-  constraint pk_resume_list primary key (location))
+  checked                   varchar(255),
+  constraint pk_resume_list primary key (resume_unique_id))
 ;
 
 create table user (

@@ -1,13 +1,13 @@
-New log file opened at Thu Nov 19 17:18:16 EST 2015 by 10665@MichaelAWYus-MacBook-Pro.local
-jvm 10665@MichaelAWYus-MacBook-Pro.local
+New log file opened at Wed Dec 02 20:06:18 EST 2015 by 2016@dyn-160-39-148-78.dyn.columbia.edu
+jvm 2016@dyn-160-39-148-78.dyn.columbia.edu
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
 Command engine arguments=List()
-Waiting for sbt command engine
 Command engine baseDirectory=/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate
+Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/project, returning: (resumate-build)
 Loading project definition from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5206e696, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@76bd9cd9, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,4 +69,161 @@ Set current project to play-java (in build file:/Users/MichaelAWYu/Documents/Unl
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@52d3d3b4, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@75051ea, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 2 s, completed Dec 2, 2015 8:06:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@494aa0f1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Dec 2, 2015 8:06:28 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f60f555, check cycles: false
+Total time: 0 s, completed Dec 2, 2015 8:06:28 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@3d92dd1d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Dec 2, 2015 8:06:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@39736141, check cycles: false
+Total time: 0 s, completed Dec 2, 2015 8:06:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@3aabe988, check cycles: false
+Total time: 1 s, completed Dec 2, 2015 8:06:33 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@7fdcf0ca, check cycles: false
+Total time: 0 s, completed Dec 2, 2015 8:06:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@58f3482e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
+Copy resource mappings: 
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
+Total time: 2 s, completed Dec 2, 2015 8:06:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@643d4c84, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
+Total time: 2 s, completed Dec 2, 2015 8:06:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 2016@dyn-160-39-148-78.dyn.columbia.edu logs at Wed Dec 02 20:09:33 EST 2015, goodbye.
