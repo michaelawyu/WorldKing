@@ -38,7 +38,7 @@ Seq[Any](format.raw/*1.19*/("""
 </head>
 <body>
 	<div id="header">
-		<img src=""""),_display_(/*10.14*/routes/*10.20*/.Assets.versioned("images/logo.png")),format.raw/*10.56*/("""" class="logo" alt="Resumate">
+		<a href="/"><img src=""""),_display_(/*10.26*/routes/*10.32*/.Assets.versioned("images/logo.png")),format.raw/*10.68*/("""" class="logo" alt="Resumate"></a>
 		<ul>
 			<li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
 			<li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
@@ -82,10 +82,10 @@ Seq[Any](format.raw/*1.19*/("""
 object registration extends registration_Scope0.registration
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 16 17:21:58 EST 2015
+                  DATE: Thu Dec 10 19:24:48 EST 2015
                   SOURCE: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/views/registration.scala.html
-                  HASH: 27d15d44a176c58a9e38fc54d8c69ac0c736dd13
-                  MATRIX: 759->1|871->18|898->19|1026->121|1040->127|1110->176|1187->226|1202->232|1259->268|1953->935|1981->942
+                  HASH: 653b8175828c6ef20ed781c9fefba3456b56ae6a
+                  MATRIX: 759->1|871->18|898->19|1026->121|1040->127|1110->176|1199->238|1214->244|1271->280|1969->951|1997->958
                   LINES: 27->1|32->1|33->2|37->6|37->6|37->6|41->10|41->10|41->10|54->23|54->23
                   -- GENERATED --
               */

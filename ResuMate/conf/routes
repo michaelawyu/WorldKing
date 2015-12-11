@@ -12,7 +12,9 @@ GET     /login                      controllers.Application.loginx()
 GET     /registration               controllers.Application.registrationx()
 GET     /jobcategory                controllers.Application.displayJobCategory()
 POST    /resumelist                 controllers.Application.displayResumeList()
-POST     /viewresume                 controllers.Application.viewResume()
+POST    /viewresume                 controllers.Application.viewResume()
+GET     /off                        controllers.Application.logoff()
+POST    /viewresumex                controllers.Application.viewResumex()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

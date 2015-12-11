@@ -1,13 +1,13 @@
-New log file opened at Wed Dec 02 20:06:18 EST 2015 by 2016@dyn-160-39-148-78.dyn.columbia.edu
-jvm 2016@dyn-160-39-148-78.dyn.columbia.edu
+New log file opened at Thu Dec 10 23:02:17 EST 2015 by 18131@MichaelAWYus-MacBook-Pro.local
+jvm 18131@MichaelAWYus-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
+Waiting for sbt command engine
 Command engine arguments=List()
 Command engine baseDirectory=/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate
-Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/project, returning: (resumate-build)
 Loading project definition from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@76bd9cd9, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@1bc97635, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,29 +69,50 @@ Set current project to play-java (in build file:/Users/MichaelAWYu/Documents/Unl
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@75051ea, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@522222b3, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
 
-Total time: 2 s, completed Dec 2, 2015 8:06:27 PM
+Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3e9b75bd directly...
+Java compilation took 0.824945632 s
+Java analysis took 0.471192456 s
+Java compile + analysis took 1.304435415 s
+Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java...
+Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
+The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java source file has the following regular definitions changed:
+	i.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java
+None of the modified names appears in /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/routes/main/router/Routes.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed Dec 10, 2015 11:02:27 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@494aa0f1, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@405a4ab5, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -108,18 +129,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Dec 2, 2015 8:06:28 PM
+Total time: 1 s, completed Dec 10, 2015 11:02:28 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@6f60f555, check cycles: false
-Total time: 0 s, completed Dec 2, 2015 8:06:28 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@547ced1e, check cycles: false
+Total time: 0 s, completed Dec 10, 2015 11:02:28 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3d92dd1d, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@536cd92a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -136,30 +157,30 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Dec 2, 2015 8:06:30 PM
+Total time: 1 s, completed Dec 10, 2015 11:02:29 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@39736141, check cycles: false
-Total time: 0 s, completed Dec 2, 2015 8:06:30 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@3293ee51, check cycles: false
+Total time: 0 s, completed Dec 10, 2015 11:03:44 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@3aabe988, check cycles: false
-Total time: 1 s, completed Dec 2, 2015 8:06:33 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@600c5545, check cycles: false
+Total time: 0 s, completed Dec 10, 2015 11:03:47 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@7fdcf0ca, check cycles: false
-Total time: 0 s, completed Dec 2, 2015 8:06:35 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@3e273881, check cycles: false
+Total time: 0 s, completed Dec 10, 2015 11:03:48 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@58f3482e, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4d22160b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -186,12 +207,12 @@ Copy resource mappings:
 	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
 	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
 	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-Total time: 2 s, completed Dec 2, 2015 8:06:47 PM
+Total time: 2 s, completed Dec 10, 2015 11:03:51 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@643d4c84, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@43c561c4, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -217,13 +238,6 @@ Copy resource mappings:
 	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
 	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
 	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-Total time: 2 s, completed Dec 2, 2015 8:06:53 PM
+Total time: 1 s, completed Dec 10, 2015 11:03:59 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 2016@dyn-160-39-148-78.dyn.columbia.edu logs at Wed Dec 02 20:09:33 EST 2015, goodbye.

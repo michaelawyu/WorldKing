@@ -80,6 +80,34 @@ li#About{
 	top: 15px;
 	left: 387px;
 }
+li#Login{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 14px;
+	right: 215px;
+}
+li#Registration{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 14px;
+	right: 50px;
+}
+li#Username{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 14px;
+	right: 205px;
+}
+li#Logoff{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 14px;
+	right: 50px;
+}
 img.logo{
 	width: 46px;
 	height: 54px;

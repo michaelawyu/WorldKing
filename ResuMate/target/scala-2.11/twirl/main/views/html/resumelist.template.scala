@@ -21,15 +21,15 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class resumelist extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[List[ResumeList],play.twirl.api.HtmlFormat.Appendable] {
+class resumelist extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[Boolean,String,List[ResumeList],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(allList: List[ResumeList]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(loginStatus: Boolean)(username: String)(allList: List[ResumeList]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.29*/("""
+Seq[Any](format.raw/*1.69*/("""
 
 """),format.raw/*3.1*/("""<!DOCTYPE html>
 <html lang="en">
@@ -40,23 +40,30 @@ Seq[Any](format.raw/*1.29*/("""
 </head>
 <body>
     <div id="header">
-        <img src=""""),_display_(/*12.20*/routes/*12.26*/.Assets.versioned("images/logo.png")),format.raw/*12.62*/("""" class="logo" alt="Resumate">
+        <a href="/"><img src=""""),_display_(/*12.32*/routes/*12.38*/.Assets.versioned("images/logo.png")),format.raw/*12.74*/("""" class="logo" alt="Resumate"></a>
         <ul>
             <li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
             <li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
             <li id="About"><a class="headerlink" href="/about">About</a></li>
-        </ul>
+            """),_display_(/*17.14*/if(!loginStatus)/*17.30*/ {_display_(Seq[Any](format.raw/*17.32*/("""
+            """),format.raw/*18.13*/("""<li id="Login"><a class="headerlink" href="/login">Login</a></li>
+            <li id="Registration"><a class="headerlink" href="/registration">Registration</a></li>
+            """)))}/*20.15*/else/*20.20*/{_display_(Seq[Any](format.raw/*20.21*/("""
+            """),format.raw/*21.13*/("""<li id="Username"><a class="headerlink" href="/">"""),_display_(/*21.63*/username),format.raw/*21.71*/("""</a></li>
+            <li id="Logoff"><a class="headerlink" href="/off">Log Off</a></li>
+            """)))}),format.raw/*23.14*/("""
+        """),format.raw/*24.9*/("""</ul>
     </div>
     <div id="body">
         <h1 id="title">Pick A Resume File to Start</h1>
         <div id="channel">
-            """),_display_(/*22.14*/for(p <- allList) yield /*22.31*/ {_display_(Seq[Any](format.raw/*22.33*/("""
-                """),format.raw/*23.17*/("""<form action="/viewresume" method="POST">
-                    <button>"""),_display_(/*24.30*/p/*24.31*/.resumeName),format.raw/*24.42*/("""</button>
-                    <input type="hidden" name="checked" value=""""),_display_(/*25.65*/p/*25.66*/.resumeUniqueID),format.raw/*25.81*/("""">
+            """),_display_(/*29.14*/for(p <- allList) yield /*29.31*/ {_display_(Seq[Any](format.raw/*29.33*/("""
+                """),format.raw/*30.17*/("""<form action="/viewresume" method="POST">
+                    <button>"""),_display_(/*31.30*/p/*31.31*/.resumeName),format.raw/*31.42*/("""</button>
+                    <input type="hidden" name="checked" value=""""),_display_(/*32.65*/p/*32.66*/.resumeUniqueID),format.raw/*32.81*/("""">
                 </form>
-            """)))}),format.raw/*27.14*/("""
-        """),format.raw/*28.9*/("""</div>
+            """)))}),format.raw/*34.14*/("""
+        """),format.raw/*35.9*/("""</div>
     </div>
 </body>
 </html>"""))
@@ -64,9 +71,9 @@ Seq[Any](format.raw/*1.29*/("""
     }
   }
 
-  def render(allList:List[ResumeList]): play.twirl.api.HtmlFormat.Appendable = apply(allList)
+  def render(loginStatus:Boolean,username:String,allList:List[ResumeList]): play.twirl.api.HtmlFormat.Appendable = apply(loginStatus)(username)(allList)
 
-  def f:((List[ResumeList]) => play.twirl.api.HtmlFormat.Appendable) = (allList) => apply(allList)
+  def f:((Boolean) => (String) => (List[ResumeList]) => play.twirl.api.HtmlFormat.Appendable) = (loginStatus) => (username) => (allList) => apply(loginStatus)(username)(allList)
 
   def ref: this.type = this
 
@@ -79,11 +86,11 @@ Seq[Any](format.raw/*1.29*/("""
 object resumelist extends resumelist_Scope0.resumelist
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 16 17:21:58 EST 2015
+                  DATE: Thu Dec 10 19:37:12 EST 2015
                   SOURCE: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/views/resumelist.scala.html
-                  HASH: 0a18f22490d88394d2a2098035b2c52f962b119f
-                  MATRIX: 765->1|887->28|915->30|1099->188|1113->194|1181->241|1267->300|1282->306|1339->342|1800->776|1833->793|1873->795|1918->812|2016->883|2026->884|2058->895|2159->969|2169->970|2205->985|2276->1025|2312->1034
-                  LINES: 27->1|32->1|34->3|39->8|39->8|39->8|43->12|43->12|43->12|53->22|53->22|53->22|54->23|55->24|55->24|55->24|56->25|56->25|56->25|58->27|59->28
+                  HASH: 3ec1307c9e39a5ea9fab43ad9e7921ee79db0699
+                  MATRIX: 780->1|942->68|970->70|1154->228|1168->234|1236->281|1334->352|1349->358|1406->394|1743->704|1768->720|1808->722|1849->735|2046->914|2059->919|2098->920|2139->933|2216->983|2245->991|2378->1093|2414->1102|2574->1235|2607->1252|2647->1254|2692->1271|2790->1342|2800->1343|2832->1354|2933->1428|2943->1429|2979->1444|3050->1484|3086->1493
+                  LINES: 27->1|32->1|34->3|39->8|39->8|39->8|43->12|43->12|43->12|48->17|48->17|48->17|49->18|51->20|51->20|51->20|52->21|52->21|52->21|54->23|55->24|60->29|60->29|60->29|61->30|62->31|62->31|62->31|63->32|63->32|63->32|65->34|66->35
                   -- GENERATED --
               */
           

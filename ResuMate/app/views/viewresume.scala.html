@@ -1,4 +1,4 @@
-
+@(loginStatus: Boolean)(username: String)(filename: String)(resumeID: String)(commentContent: String)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,15 +9,52 @@
 </head>
 <body>
     <div id="header">
-        <img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate">
+        <a href="/"><img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate"></a>
         <ul>
             <li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
             <li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
             <li id="About"><a class="headerlink" href="/about">About</a></li>
+            @if(!loginStatus) {
+            <li id="Login"><a class="headerlink" href="/login">Login</a></li>
+            <li id="Registration"><a class="headerlink" href="/registration">Registration</a></li>
+            } else {
+            <li id="Username"><a class="headerlink" href="/">@username</a></li>
+            <li id="Logoff"><a class="headerlink" href="/off">Log Off</a></li>
+            }
         </ul>
     </div>
-    <div id="body">
-        <iframe id="PDF" style="border:1px solid #666CCC" title="PDF" src="/assets/resume/Resume.pdf" frameborder="1" scrolling="auto" height="1100" width="850" ></iframe>
+    <div id="leftbody">
+        <iframe id="PDF" style="border:0px solid #666CCC" title="PDF" src=@filename frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
     </div>
+    <div id="rightbody">
+        <h1 id="Rating">Rating</h1>
+        <h1 id="Score">5</h1>
+        <h1 id="ScoreExp">out of 5</h1>
+        <div id="form">
+            <form action="/viewresumex" method="POST">
+                <select id="select" name="rating">
+                    <option value="0" selected>Not Applicable</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input id="text" type="text" name="content" maxlength="50"/>
+                <button id="submit"><i>submit</i></button>
+                <input type="hidden" name="resumeID" value=@resumeID />
+                <input type="hidden" name="uniqueCommentID" value="1" />
+            </form>
+        </div>
+        <div id="comment">
+            <div id="subcomment">
+                <p id="content">@commentContent</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
 </body>
 </html>
