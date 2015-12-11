@@ -4,9 +4,6 @@ import javax.persistence.*;
 import com.avaje.ebean.*;
 
 
-/**
- * Created by MichaelAWYu on 11/16/15.
- */
 @Entity
 public class JobCategory extends Model{
 

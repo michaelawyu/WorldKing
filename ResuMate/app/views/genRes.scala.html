@@ -1,4 +1,4 @@
-@(title: String)
+@(loginStatus: Boolean)(username: String)(title: String)
 
 <!DOCTYPE html>
 <html>
@@ -8,11 +8,18 @@
 </head>
 <body>
 	<div id="header">
-		<img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate">
+		<a href="/"><img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate"></a>
 		<ul>
 			<li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
 			<li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
 			<li id="About"><a class="headerlink" href="/about">About</a></li>
+			@if(!loginStatus) {
+			<li id="Login"><a class="headerlink" href="/login">Login</a></li>
+			<li id="Registration"><a class="headerlink" href="/registration">Registration</a></li>
+			} else {
+			<li id="Username"><a class="headerlink" href="/">@username</a></li>
+			<li id="Logoff"><a class="headerlink" href="/off">Log Off</a></li>
+			}
 		</ul>
 	</div>
 	<div id="body">

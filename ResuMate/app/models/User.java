@@ -2,7 +2,6 @@ package models;
 
 import javax.persistence.*;
 import com.avaje.ebean.*;
-import com.sun.javafx.beans.IDProperty;
 
 @Entity
 public class User extends Model {

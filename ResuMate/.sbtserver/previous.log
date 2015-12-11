@@ -1,13 +1,13 @@
-New log file opened at Wed Dec 02 18:19:47 EST 2015 by 1789@dyn-160-39-148-78.dyn.columbia.edu
-jvm 1789@dyn-160-39-148-78.dyn.columbia.edu
+New log file opened at Thu Dec 10 22:53:26 EST 2015 by 18048@MichaelAWYus-MacBook-Pro.local
+jvm 18048@MichaelAWYus-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
+Waiting for sbt command engine
 Command engine arguments=List()
 Command engine baseDirectory=/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate
-Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/project, returning: (resumate-build)
 Loading project definition from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@7950e631, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6612fad9, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,31 +67,9 @@ Set current project to play-java (in build file:/Users/MichaelAWYu/Documents/Unl
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4e220779, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 2 s, completed Dec 2, 2015 6:19:56 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@54e6f260, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3260de4a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -108,18 +86,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Dec 2, 2015 6:19:57 PM
+Total time: 1 s, completed Dec 10, 2015 10:53:34 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@788b4419, check cycles: false
-Total time: 0 s, completed Dec 2, 2015 6:19:57 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@338e67a, check cycles: false
+Total time: 0 s, completed Dec 10, 2015 10:53:34 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3a168037, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@34cf51f6, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -136,12 +114,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Dec 2, 2015 6:19:59 PM
+Total time: 1 s, completed Dec 10, 2015 10:53:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@5f981c26, check cycles: false
+Total time: 0 s, completed Dec 10, 2015 10:53:35 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@3dc206bb, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@52be7e9b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -186,20 +170,20 @@ All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYar
 
 Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
 Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@29bb6d82 directly...
+Attempting to call com.sun.tools.javac.api.JavacTool@7e813a98 directly...
 Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
 /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
 Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
 /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 2.412081468 s
-Java analysis took 0.205696988 s
-Java compile + analysis took 2.625306101 s
+Java compilation took 0.911661874 s
+Java analysis took 0.183730098 s
+Java compile + analysis took 1.103301938 s
 Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java...
 Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java...
 Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
 Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
 The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java source file has the following regular definitions changed:
-	init, simpleCheck, JobCategoryAddTest.
+	CandRAvgMethodTestD.
 All member reference dependencies will be considered within this context.
 Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java
 New invalidations:
@@ -216,35 +200,131 @@ Framework implementation 'org.specs2.runner.SpecsFramework' not present.
 Framework implementation 'org.specs.runner.SpecsFramework' not present.
 Framework implementation 'org.scalatest.tools.Framework' not present.
 Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@1bbdbf8))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@7cb6964b), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@230df63e))
+Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@50d90ec2))
+Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@3096fbd8), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@28215c16))
 Forking tests - parallelism = false
 Create a single-thread test executor
 Runner for com.novocode.junit.JUnitFramework produced 2 initial tasks for 2 tests.
   Running TaskDef(ApplicationTest, sbt.ForkMain$AnnotatedFingerscan@644aa70d, false, [SuiteSelector])
 Test run started
 Test ApplicationTest.simpleCheck started
-Test ApplicationTest.simpleCheck finished, took 0.008 sec
+Test ApplicationTest.simpleCheck finished, took 0.003 sec
 Test ApplicationTest.renderTemplate started
-Test ApplicationTest.renderTemplate finished, took 1.321 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 1.344s
+Test ApplicationTest.renderTemplate finished, took 0.866 sec
+Test run finished: 0 failed, 0 ignored, 2 total, 0.88s
     Produced 0 nested tasks and 2 events.
   Running TaskDef(ModelTest, sbt.ForkMain$AnnotatedFingerscan@60e6ea0b, false, [SuiteSelector])
 Test run started
+Test ModelTest.CommentAndRatingTest started
+[info] - application - Creating Pool for datasource 'default'
+Test ModelTest.CommentAndRatingTest finished, took 2.599 sec
+Test ModelTest.UserAddTest started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.UserAddTest finished, took 0.244 sec
+Test ModelTest.ResumeListAddTest started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.ResumeListAddTest finished, took 0.148 sec
 Test ModelTest.renderTemplate started
 [info] - application - Creating Pool for datasource 'default'
-Test ModelTest.renderTemplate finished, took 4.043 sec
+[info] - application - Shutting down connection pool.
+Test ModelTest.renderTemplate finished, took 0.126 sec
+Test ModelTest.CandRAvgMethodTestA started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.CandRAvgMethodTestA finished, took 0.145 sec
+Test ModelTest.CandRAvgMethodTestB started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.CandRAvgMethodTestB finished, took 0.107 sec
+Test ModelTest.CandRAvgMethodTestC started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.CandRAvgMethodTestC finished, took 0.108 sec
+Test ModelTest.CandRAvgMethodTestD started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Read from stdout: Test ModelTest.CandRAvgMethodTestD failed: javax.persistence.PersistenceException: ERROR executing DML bindLog[] error[Unique index or primary key violation: "PRIMARY_KEY_8 ON PUBLIC.COMMENT_AND_RATING(UNIQUE_COMMENT_ID) VALUES ('2', 2)"; SQL statement:\n insert into comment_and_rating (unique_comment_id, user_id, date_and_time, content, rating, resume_id) values (?,?,?,?,?,?) [23505-187]], took 0.111 sec
+Test ModelTest.CandRAvgMethodTestD failed: javax.persistence.PersistenceException: ERROR executing DML bindLog[] error[Unique index or primary key violation: "PRIMARY_KEY_8 ON PUBLIC.COMMENT_AND_RATING(UNIQUE_COMMENT_ID) VALUES ('2', 2)"; SQL statement:\n insert into comment_and_rating (unique_comment_id, user_id, date_and_time, content, rating, resume_id) values (?,?,?,?,?,?) [23505-187]], took 0.111 sec
+Read from stdout: at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.execute(DmlBeanPersister.java:90)
+    at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.execute(DmlBeanPersister.java:90)
+Read from stdout: at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.insert(DmlBeanPersister.java:57)
+    at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.insert(DmlBeanPersister.java:57)
+Read from stdout: at com.avaje.ebeaninternal.server.persist.DefaultPersistExecute.executeInsertBean(DefaultPersistExecute.java:59)
+    at com.avaje.ebeaninternal.server.persist.DefaultPersistExecute.executeInsertBean(DefaultPersistExecute.java:59)
+Read from stdout: at com.avaje.ebeaninternal.server.core.PersistRequestBean.executeNow(PersistRequestBean.java:446)
+    at com.avaje.ebeaninternal.server.core.PersistRequestBean.executeNow(PersistRequestBean.java:446)
+Read from stdout: at com.avaje.ebeaninternal.server.core.PersistRequestBean.executeOrQueue(PersistRequestBean.java:480)
+    at com.avaje.ebeaninternal.server.core.PersistRequestBean.executeOrQueue(PersistRequestBean.java:480)
+Read from stdout: at com.avaje.ebeaninternal.server.persist.DefaultPersister.insert(DefaultPersister.java:261)
+    at com.avaje.ebeaninternal.server.persist.DefaultPersister.insert(DefaultPersister.java:261)
+Read from stdout: at com.avaje.ebeaninternal.server.persist.DefaultPersister.insert(DefaultPersister.java:211)
+    at com.avaje.ebeaninternal.server.persist.DefaultPersister.insert(DefaultPersister.java:211)
+Read from stdout: at com.avaje.ebeaninternal.server.persist.DefaultPersister.save(DefaultPersister.java:199)
+    at com.avaje.ebeaninternal.server.persist.DefaultPersister.save(DefaultPersister.java:199)
+Read from stdout: at com.avaje.ebeaninternal.server.core.DefaultServer.save(DefaultServer.java:1461)
+    at com.avaje.ebeaninternal.server.core.DefaultServer.save(DefaultServer.java:1461)
+Read from stdout: at com.avaje.ebeaninternal.server.core.DefaultServer.save(DefaultServer.java:1454)
+    at com.avaje.ebeaninternal.server.core.DefaultServer.save(DefaultServer.java:1454)
+Read from stdout: at com.avaje.ebean.Model.save(Model.java:208)
+    at com.avaje.ebean.Model.save(Model.java:208)
+Read from stdout: at ModelTest.CandRAvgMethodTestD(ModelTest.java:100)
+    at ModelTest.CandRAvgMethodTestD(ModelTest.java:100)
+Read from stdout: ...
+    ...
+Read from stdout: Caused by: org.h2.jdbc.JdbcSQLException: Unique index or primary key violation: "PRIMARY_KEY_8 ON PUBLIC.COMMENT_AND_RATING(UNIQUE_COMMENT_ID) VALUES ('2', 2)"; SQL statement:
+Read from stdout: insert into comment_and_rating (unique_comment_id, user_id, date_and_time, content, rating, resume_id) values (?,?,?,?,?,?) [23505-187]
+Caused by: org.h2.jdbc.JdbcSQLException: Unique index or primary key violation: "PRIMARY_KEY_8 ON PUBLIC.COMMENT_AND_RATING(UNIQUE_COMMENT_ID) VALUES ('2', 2)"; SQL statement:
+insert into comment_and_rating (unique_comment_id, user_id, date_and_time, content, rating, resume_id) values (?,?,?,?,?,?) [23505-187]
+Read from stdout: at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+    at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+Read from stdout: at org.h2.message.DbException.get(DbException.java:179)
+    at org.h2.message.DbException.get(DbException.java:179)
+Read from stdout: at org.h2.message.DbException.get(DbException.java:155)
+    at org.h2.message.DbException.get(DbException.java:155)
+Read from stdout: at org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:102)
+    at org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:102)
+Read from stdout: at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:233)
+    at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:233)
+Read from stdout: at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:191)
+    at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:191)
+Read from stdout: at org.h2.mvstore.db.MVTable.addRow(MVTable.java:638)
+    at org.h2.mvstore.db.MVTable.addRow(MVTable.java:638)
+Read from stdout: at org.h2.command.dml.Insert.insertRows(Insert.java:156)
+    at org.h2.command.dml.Insert.insertRows(Insert.java:156)
+Read from stdout: at org.h2.command.dml.Insert.update(Insert.java:114)
+    at org.h2.command.dml.Insert.update(Insert.java:114)
+Read from stdout: at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+    at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+Read from stdout: at org.h2.command.Command.executeUpdate(Command.java:254)
+    at org.h2.command.Command.executeUpdate(Command.java:254)
+Read from stdout: at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+    at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+Read from stdout: at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+    at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+Read from stdout: at com.zaxxer.hikari.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:61)
+    at com.zaxxer.hikari.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:61)
+Read from stdout: at com.zaxxer.hikari.proxy.PreparedStatementJavassistProxy.executeUpdate(PreparedStatementJavassistProxy.java)
+    at com.zaxxer.hikari.proxy.PreparedStatementJavassistProxy.executeUpdate(PreparedStatementJavassistProxy.java)
+Read from stdout: at com.avaje.ebeaninternal.server.type.DataBind.executeUpdate(DataBind.java:56)
+    at com.avaje.ebeaninternal.server.type.DataBind.executeUpdate(DataBind.java:56)
+Read from stdout: at com.avaje.ebeaninternal.server.persist.dml.InsertHandler.execute(InsertHandler.java:128)
+    at com.avaje.ebeaninternal.server.persist.dml.InsertHandler.execute(InsertHandler.java:128)
+Read from stdout: at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.execute(DmlBeanPersister.java:80)
+    at com.avaje.ebeaninternal.server.persist.dml.DmlBeanPersister.execute(DmlBeanPersister.java:80)
+Read from stdout: ... 46 more
+    ... 46 more
+Test ModelTest.CandRAvgMethodTestD finished, took 0.151 sec
 Test ModelTest.JobCategoryAddTest started
 [info] - application - Creating Pool for datasource 'default'
 [info] - application - Shutting down connection pool.
-Read from stdout: Test ModelTest.JobCategoryAddTest failed: null, took 0.304 sec
-Test ModelTest.JobCategoryAddTest failed: null, took 0.304 sec
-Test ModelTest.JobCategoryAddTest finished, took 0.305 sec
-Test run finished: 1 failed, 0 ignored, 2 total, 4.349s
-    Produced 0 nested tasks and 2 events.
+Test ModelTest.JobCategoryAddTest finished, took 0.119 sec
+Test run finished: 1 failed, 0 ignored, 9 total, 3.752s
+    Produced 0 nested tasks and 9 events.
 Summary for JUnit not available.
-Read from stdout: Failed: Total 4, Failed 1, Errors 0, Passed 3
-Failed: Total 4, Failed 1, Errors 0, Passed 3
+Read from stdout: Failed: Total 11, Failed 1, Errors 0, Passed 10
+Failed: Total 11, Failed 1, Errors 0, Passed 10
 Passed tests:
 	ApplicationTest
 Read from stdout: Failed tests:
@@ -253,13 +333,13 @@ Read from stdout: 	ModelTest
 	ModelTest
 Read from stdout: (test:test) sbt.TestsFailedException: Tests unsuccessful
 (test:test) sbt.TestsFailedException: Tests unsuccessful
-Total time: 12 s, completed Dec 2, 2015 6:22:21 PM
+Total time: 8 s, completed Dec 10, 2015 10:53:46 PM
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@184c5bd0, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@55305bf, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -276,12 +356,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Dec 2, 2015 6:25:27 PM
+Total time: 1 s, completed Dec 10, 2015 10:54:00 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@310840be, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1f4dc72e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -325,14 +405,14 @@ All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYar
 
 Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
 Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@77a6be0f directly...
+Attempting to call com.sun.tools.javac.api.JavacTool@47a37ff7 directly...
 Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
 /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
 Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
 /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.198510671 s
-Java analysis took 0.033906442 s
-Java compile + analysis took 0.236744743 s
+Java compilation took 0.201404336 s
+Java analysis took 0.033038855 s
+Java compile + analysis took 0.240023743 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
@@ -347,1424 +427,64 @@ Framework implementation 'org.specs2.runner.SpecsFramework' not present.
 Framework implementation 'org.specs.runner.SpecsFramework' not present.
 Framework implementation 'org.scalatest.tools.Framework' not present.
 Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@6cb8e7cc))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@1f868a14), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@5fe60af))
-Forking tests - parallelism = false
-Create a single-thread test executor
-Runner for com.novocode.junit.JUnitFramework produced 2 initial tasks for 2 tests.
-  Running TaskDef(ApplicationTest, sbt.ForkMain$AnnotatedFingerscan@45825131, false, [SuiteSelector])
-Test run started
-Test ApplicationTest.simpleCheck started
-Test ApplicationTest.simpleCheck finished, took 0.003 sec
-Test ApplicationTest.renderTemplate started
-Test ApplicationTest.renderTemplate finished, took 0.668 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 0.693s
-    Produced 0 nested tasks and 2 events.
-  Running TaskDef(ModelTest, sbt.ForkMain$AnnotatedFingerscan@32904985, false, [SuiteSelector])
-Test run started
-Test ModelTest.renderTemplate started
-[info] - application - Creating Pool for datasource 'default'
-Test ModelTest.renderTemplate finished, took 2.688 sec
-Test ModelTest.JobCategoryAddTest started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.JobCategoryAddTest finished, took 0.283 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 2.973s
-    Produced 0 nested tasks and 2 events.
-Summary for JUnit not available.
-Read from stdout: Passed: Total 4, Failed 0, Errors 0, Passed 4
-Passed: Total 4, Failed 0, Errors 0, Passed 4
-Passed tests:
-	ModelTest
-	ApplicationTest
-Total time: 6 s, completed Dec 2, 2015 6:25:39 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4de3d548, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@5ccdc96b directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.067282594 s
-Java analysis took 0.081255183 s
-Java compile + analysis took 0.15434034 s
-Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java...
-Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java...
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java)
-Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java)
-The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java source file has the following regular definitions changed:
-	jobCategoryID, jobCategoryName.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java
-The following modified names cause invalidation of /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/jobcategory.template.scala: Set(jobCategoryID, jobCategoryName)
-New invalidations:
-	Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/jobcategory.template.scala)
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/jobcategory.template.scala)
-Including /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/routes/main/router/Routes.scala by /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/jobcategory.template.scala)
-Read from stdout: Compiling 1 Scala source and 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Scala source and 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 1524d160, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar
-	-classpath
-	/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/MichaelAWYu/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/MichaelAWYu/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/MichaelAWYu/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/MichaelAWYu/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/MichaelAWYu/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/MichaelAWYu/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/MichaelAWYu/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/MichaelAWYu/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/MichaelAWYu/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/MichaelAWYu/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/MichaelAWYu/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/Users/MichaelAWYu/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.3.7.jar:/Users/MichaelAWYu/.ivy2/cache/com.h2database/h2/jars/h2-1.4.187.jar:/Users/MichaelAWYu/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.3.0.jar:/Users/MichaelAWYu/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.15.jar:/Users/MichaelAWYu/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/Users/MichaelAWYu/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/Users/MichaelAWYu/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/Users/MichaelAWYu/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.1.6.RELEASE.jar:/Users/MichaelAWYu/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.1.6.RELEASE.jar:/Users/MichaelAWYu/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.1.6.RELEASE.jar:/Users/MichaelAWYu/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.9.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.code.findbugs/annotations/jars/annotations-2.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.1.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.21.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/MichaelAWYu/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/MichaelAWYu/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/MichaelAWYu/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/MichaelAWYu/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/MichaelAWYu/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/MichaelAWYu/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/MichaelAWYu/.ivy2/cache/it.innove/play2-pdf/jars/play2-pdf-1.3.0.jar:/Users/MichaelAWYu/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar:/Users/MichaelAWYu/.ivy2/cache/org.xhtmlrenderer/flying-saucer-pdf/jars/flying-saucer-pdf-9.0.7.jar:/Users/MichaelAWYu/.ivy2/cache/com.lowagie/itext/jars/itext-2.1.7.jar:/Users/MichaelAWYu/.ivy2/cache/bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-138.jar:/Users/MichaelAWYu/.ivy2/cache/bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-138.jar:/Users/MichaelAWYu/.ivy2/cache/org.bouncycastle/bctsp-jdk14/jars/bctsp-jdk14-1.38.jar:/Users/MichaelAWYu/.ivy2/cache/org.bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-1.38.jar:/Users/MichaelAWYu/.ivy2/cache/org.bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-1.38.jar:/Users/MichaelAWYu/.ivy2/cache/org.xhtmlrenderer/flying-saucer-core/jars/flying-saucer-core-9.0.7.jar:/Users/MichaelAWYu/.ivy2/cache/nu.validator.htmlparser/htmlparser/bundles/htmlparser-1.4.jar
-Scala compilation took 5.509116311 s
-Attempting to call com.sun.tools.javac.api.JavacTool@5ccdc96b directly...
-Java compilation took 0.151818198 s
-Java analysis took 0.162446696 s
-Java compile + analysis took 0.317895229 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 7 s, completed Dec 2, 2015 6:26:13 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1769af8a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@5f9e60a1 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/JobCategory.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.056234847 s
-Java analysis took 0.047193953 s
-Java compile + analysis took 0.108310437 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Dec 2, 2015 6:26:30 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> test
-Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@762c1031, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-The models.JobCategory source file has the following regular definitions changed:
-	jobCategoryID, jobCategoryName.
-All member reference dependencies will be considered within this context.
-Files invalidated by inheriting from (external) models.JobCategory: Set(); now invalidating by inheritance (internally).
-Getting direct dependencies of all sources transitively invalidated by inheritance.
-Getting sources that directly depend on (external) models.JobCategory.
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-Removed products: Set()
-External API changes: API Changes: Set(NamesChange(models.JobCategory,ModifiedNames(regularNames = jobCategoryID, jobCategoryName, implicitNames = )))
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2e566345 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.126789692 s
-Java analysis took 0.026460716 s
-Java compile + analysis took 0.158931686 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs2.runner.Specs2Framework' not present.
-Framework implementation 'org.specs2.runner.SpecsFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'org.scalatest.tools.Framework' not present.
-Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@199f3beb))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@73733deb), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@b9f3100))
-Forking tests - parallelism = false
-Create a single-thread test executor
-Runner for com.novocode.junit.JUnitFramework produced 2 initial tasks for 2 tests.
-  Running TaskDef(ApplicationTest, sbt.ForkMain$AnnotatedFingerscan@7858c11f, false, [SuiteSelector])
-Test run started
-Test ApplicationTest.simpleCheck started
-Test ApplicationTest.simpleCheck finished, took 0.004 sec
-Test ApplicationTest.renderTemplate started
-Test ApplicationTest.renderTemplate finished, took 0.569 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 0.584s
-    Produced 0 nested tasks and 2 events.
-  Running TaskDef(ModelTest, sbt.ForkMain$AnnotatedFingerscan@691a39f2, false, [SuiteSelector])
-Test run started
-Test ModelTest.renderTemplate started
-[info] - application - Creating Pool for datasource 'default'
-Test ModelTest.renderTemplate finished, took 2.775 sec
-Test ModelTest.JobCategoryAddTest started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.JobCategoryAddTest finished, took 0.309 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 3.09s
-    Produced 0 nested tasks and 2 events.
-Summary for JUnit not available.
-Read from stdout: Passed: Total 4, Failed 0, Errors 0, Passed 4
-Passed: Total 4, Failed 0, Errors 0, Passed 4
-Passed tests:
-	ModelTest
-	ApplicationTest
-Total time: 5 s, completed Dec 2, 2015 6:26:36 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@3a970823, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Dec 2, 2015 6:29:06 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@394209d6, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed Dec 2, 2015 6:31:38 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@190f3ca0, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@1174fda5 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.182644944 s
-Java analysis took 0.158826478 s
-Java compile + analysis took 0.349890904 s
-Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java...
-Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java...
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java source file has the following regular definitions changed:
-	Location, resumeUniqueID.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java
-The following modified names cause invalidation of /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/resumelist.template.scala: Set(resumeUniqueID)
-New invalidations:
-	Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/resumelist.template.scala)
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/resumelist.template.scala)
-Including /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/routes/main/router/Routes.scala by /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/resumelist.template.scala)
-Read from stdout: Compiling 1 Scala source and 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Scala source and 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 33cff107, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar
-	-classpath
-	/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/MichaelAWYu/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-1.0.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/MichaelAWYu/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/MichaelAWYu/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/MichaelAWYu/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/MichaelAWYu/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/MichaelAWYu/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/MichaelAWYu/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/MichaelAWYu/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/MichaelAWYu/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/MichaelAWYu/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/MichaelAWYu/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/Users/MichaelAWYu/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.3.7.jar:/Users/MichaelAWYu/.ivy2/cache/com.h2database/h2/jars/h2-1.4.187.jar:/Users/MichaelAWYu/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/bundles/scala-java8-compat_2.11-0.3.0.jar:/Users/MichaelAWYu/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.15.jar:/Users/MichaelAWYu/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/Users/MichaelAWYu/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/Users/MichaelAWYu/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/Users/MichaelAWYu/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.1.Final.jar:/Users/MichaelAWYu/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.1.6.RELEASE.jar:/Users/MichaelAWYu/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.1.6.RELEASE.jar:/Users/MichaelAWYu/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.1.6.RELEASE.jar:/Users/MichaelAWYu/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.9.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.code.findbugs/annotations/jars/annotations-2.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.1.jar:/Users/MichaelAWYu/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/Users/MichaelAWYu/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.21.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/Users/MichaelAWYu/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-4.6.2.jar:/Users/MichaelAWYu/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar:/Users/MichaelAWYu/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.3.jar:/Users/MichaelAWYu/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/MichaelAWYu/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/MichaelAWYu/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/MichaelAWYu/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/MichaelAWYu/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/MichaelAWYu/.ivy2/cache/it.innove/play2-pdf/jars/play2-pdf-1.3.0.jar:/Users/MichaelAWYu/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.4.jar:/Users/MichaelAWYu/.ivy2/cache/org.xhtmlrenderer/flying-saucer-pdf/jars/flying-saucer-pdf-9.0.7.jar:/Users/MichaelAWYu/.ivy2/cache/com.lowagie/itext/jars/itext-2.1.7.jar:/Users/MichaelAWYu/.ivy2/cache/bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-138.jar:/Users/MichaelAWYu/.ivy2/cache/bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-138.jar:/Users/MichaelAWYu/.ivy2/cache/org.bouncycastle/bctsp-jdk14/jars/bctsp-jdk14-1.38.jar:/Users/MichaelAWYu/.ivy2/cache/org.bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-1.38.jar:/Users/MichaelAWYu/.ivy2/cache/org.bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-1.38.jar:/Users/MichaelAWYu/.ivy2/cache/org.xhtmlrenderer/flying-saucer-core/jars/flying-saucer-core-9.0.7.jar:/Users/MichaelAWYu/.ivy2/cache/nu.validator.htmlparser/htmlparser/bundles/htmlparser-1.4.jar
-Scala compilation took 2.186219886 s
-Attempting to call com.sun.tools.javac.api.JavacTool@1174fda5 directly...
-Java compilation took 0.166918397 s
-Java analysis took 0.094934109 s
-Java compile + analysis took 0.266385986 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed Dec 2, 2015 6:45:37 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@37cbc343, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed Dec 2, 2015 6:45:39 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@30ed6293, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@42a9a3d7 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.117010963 s
-Java analysis took 0.065728753 s
-Java compile + analysis took 0.189648684 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Dec 2, 2015 6:45:53 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@375e5cb8, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@258bf574 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.060507658 s
-Java analysis took 0.042374552 s
-Java compile + analysis took 0.109655363 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Dec 2, 2015 6:48:50 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@36a64bea, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Dec 2, 2015 6:49:53 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> test
-Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@2aa13081, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@4fa545b8 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.158248305 s
-Java analysis took 0.029799382 s
-Java compile + analysis took 0.195232909 s
-Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java...
-Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java...
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java source file has the following regular definitions changed:
-	ResumeListAddTest.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs2.runner.Specs2Framework' not present.
-Framework implementation 'org.specs2.runner.SpecsFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'org.scalatest.tools.Framework' not present.
-Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@3b67d77e))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@54da548b), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@63bb2c1a))
-Forking tests - parallelism = false
-Create a single-thread test executor
-Runner for com.novocode.junit.JUnitFramework produced 2 initial tasks for 2 tests.
-  Running TaskDef(ApplicationTest, sbt.ForkMain$AnnotatedFingerscan@644aa70d, false, [SuiteSelector])
-Test run started
-Test ApplicationTest.simpleCheck started
-Test ApplicationTest.simpleCheck finished, took 0.004 sec
-Test ApplicationTest.renderTemplate started
-Test ApplicationTest.renderTemplate finished, took 0.6 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 0.616s
-    Produced 0 nested tasks and 2 events.
-  Running TaskDef(ModelTest, sbt.ForkMain$AnnotatedFingerscan@60e6ea0b, false, [SuiteSelector])
-Test run started
-Test ModelTest.ResumeListAddTest started
-[info] - application - Creating Pool for datasource 'default'
-Test ModelTest.ResumeListAddTest finished, took 2.653 sec
-Test ModelTest.renderTemplate started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.renderTemplate finished, took 0.224 sec
-Test ModelTest.JobCategoryAddTest started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.JobCategoryAddTest finished, took 0.158 sec
-Test run finished: 0 failed, 0 ignored, 3 total, 3.038s
-    Produced 0 nested tasks and 3 events.
-Summary for JUnit not available.
-Read from stdout: Passed: Total 5, Failed 0, Errors 0, Passed 5
-Passed: Total 5, Failed 0, Errors 0, Passed 5
-Passed tests:
-	ModelTest
-	ApplicationTest
-Total time: 5 s, completed Dec 2, 2015 6:50:02 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2313fa72, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed Dec 2, 2015 7:02:44 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@681f3bfa, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Dec 2, 2015 7:04:54 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> test
-Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@10f611fd, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@4d2ebb38 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.103212167 s
-Java analysis took 0.038471404 s
-Java compile + analysis took 0.144207455 s
-Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java...
-Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java...
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java source file has the following regular definitions changed:
-	UserAddTest.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs2.runner.Specs2Framework' not present.
-Framework implementation 'org.specs2.runner.SpecsFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'org.scalatest.tools.Framework' not present.
-Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@4ae81881))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@330e272e), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@5fedccba))
-Forking tests - parallelism = false
-Create a single-thread test executor
-Runner for com.novocode.junit.JUnitFramework produced 2 initial tasks for 2 tests.
-  Running TaskDef(ApplicationTest, sbt.ForkMain$AnnotatedFingerscan@644aa70d, false, [SuiteSelector])
-Test run started
-Test ApplicationTest.simpleCheck started
-Test ApplicationTest.simpleCheck finished, took 0.003 sec
-Test ApplicationTest.renderTemplate started
-Test ApplicationTest.renderTemplate finished, took 0.552 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 0.567s
-    Produced 0 nested tasks and 2 events.
-  Running TaskDef(ModelTest, sbt.ForkMain$AnnotatedFingerscan@60e6ea0b, false, [SuiteSelector])
-Test run started
-Test ModelTest.UserAddTest started
-[info] - application - Creating Pool for datasource 'default'
-Read from stdout: Test ModelTest.UserAddTest failed: expected:<[email@email.com]> but was:<[password]>, took 2.617 sec
-Test ModelTest.UserAddTest failed: expected:<[email@email.com]> but was:<[password]>, took 2.617 sec
-Test ModelTest.UserAddTest finished, took 2.62 sec
-Test ModelTest.ResumeListAddTest started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.ResumeListAddTest finished, took 0.252 sec
-Test ModelTest.renderTemplate started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.renderTemplate finished, took 0.137 sec
-Test ModelTest.JobCategoryAddTest started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.JobCategoryAddTest finished, took 0.145 sec
-Test run finished: 1 failed, 0 ignored, 4 total, 3.16s
-    Produced 0 nested tasks and 4 events.
-Summary for JUnit not available.
-Read from stdout: Failed: Total 6, Failed 1, Errors 0, Passed 5
-Failed: Total 6, Failed 1, Errors 0, Passed 5
-Passed tests:
-	ApplicationTest
-Read from stdout: Failed tests:
-Failed tests:
-Read from stdout: 	ModelTest
-	ModelTest
-Read from stdout: (test:test) sbt.TestsFailedException: Tests unsuccessful
-(test:test) sbt.TestsFailedException: Tests unsuccessful
-Total time: 5 s, completed Dec 2, 2015 7:05:41 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@ab828c5, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Dec 2, 2015 7:06:08 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> test
-Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@273e9e8f, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@3bea9406 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.194715395 s
-Java analysis took 0.039093331 s
-Java compile + analysis took 0.238044779 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs2.runner.Specs2Framework' not present.
-Framework implementation 'org.specs2.runner.SpecsFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'org.scalatest.tools.Framework' not present.
-Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@16d30a00))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@6ce4de3), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@666683d6))
+Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@d07070d))
+Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@7a1a2790), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@dabbf28))
 Forking tests - parallelism = false
 Create a single-thread test executor
 Runner for com.novocode.junit.JUnitFramework produced 2 initial tasks for 2 tests.
   Running TaskDef(ApplicationTest, sbt.ForkMain$AnnotatedFingerscan@38727fb5, false, [SuiteSelector])
 Test run started
 Test ApplicationTest.simpleCheck started
-Test ApplicationTest.simpleCheck finished, took 0.003 sec
+Test ApplicationTest.simpleCheck finished, took 0.002 sec
 Test ApplicationTest.renderTemplate started
-Test ApplicationTest.renderTemplate finished, took 0.554 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 0.567s
+Test ApplicationTest.renderTemplate finished, took 0.528 sec
+Test run finished: 0 failed, 0 ignored, 2 total, 0.54s
     Produced 0 nested tasks and 2 events.
   Running TaskDef(ModelTest, sbt.ForkMain$AnnotatedFingerscan@125661a1, false, [SuiteSelector])
 Test run started
+Test ModelTest.CommentAndRatingTest started
+[info] - application - Creating Pool for datasource 'default'
+Test ModelTest.CommentAndRatingTest finished, took 2.596 sec
 Test ModelTest.UserAddTest started
 [info] - application - Creating Pool for datasource 'default'
-Test ModelTest.UserAddTest finished, took 2.774 sec
+[info] - application - Shutting down connection pool.
+Test ModelTest.UserAddTest finished, took 0.231 sec
 Test ModelTest.ResumeListAddTest started
 [info] - application - Creating Pool for datasource 'default'
 [info] - application - Shutting down connection pool.
-Test ModelTest.ResumeListAddTest finished, took 0.248 sec
+Test ModelTest.ResumeListAddTest finished, took 0.135 sec
 Test ModelTest.renderTemplate started
 [info] - application - Creating Pool for datasource 'default'
 [info] - application - Shutting down connection pool.
-Test ModelTest.renderTemplate finished, took 0.137 sec
+Test ModelTest.renderTemplate finished, took 0.131 sec
+Test ModelTest.CandRAvgMethodTestA started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.CandRAvgMethodTestA finished, took 0.157 sec
+Test ModelTest.CandRAvgMethodTestB started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.CandRAvgMethodTestB finished, took 0.102 sec
+Test ModelTest.CandRAvgMethodTestC started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.CandRAvgMethodTestC finished, took 0.1 sec
+Test ModelTest.CandRAvgMethodTestD started
+[info] - application - Creating Pool for datasource 'default'
+[info] - application - Shutting down connection pool.
+Test ModelTest.CandRAvgMethodTestD finished, took 0.11 sec
 Test ModelTest.JobCategoryAddTest started
 [info] - application - Creating Pool for datasource 'default'
 [info] - application - Shutting down connection pool.
-Test ModelTest.JobCategoryAddTest finished, took 0.132 sec
-Test run finished: 0 failed, 0 ignored, 4 total, 3.292s
-    Produced 0 nested tasks and 4 events.
+Test ModelTest.JobCategoryAddTest finished, took 0.089 sec
+Test run finished: 0 failed, 0 ignored, 9 total, 3.66s
+    Produced 0 nested tasks and 9 events.
 Summary for JUnit not available.
-Read from stdout: Passed: Total 6, Failed 0, Errors 0, Passed 6
-Passed: Total 6, Failed 0, Errors 0, Passed 6
+Read from stdout: Passed: Total 11, Failed 0, Errors 0, Passed 11
+Passed: Total 11, Failed 0, Errors 0, Passed 11
 Passed tests:
 	ModelTest
 	ApplicationTest
-Total time: 5 s, completed Dec 2, 2015 7:06:14 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6fb81c2b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@5c4dfadf directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.040600723 s
-Java analysis took 0.059604489 s
-Java compile + analysis took 0.103872343 s
-Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java...
-Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java...
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java)
-The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java source file has the following regular definitions changed:
-	checked.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/ResumeList.java
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java
-None of the modified names appears in /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/twirl/main/views/html/resumelist.template.scala. This dependency is not being considered for invalidation.
-New invalidations:
-	Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-Including /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/routes/main/router/Routes.scala by /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@5c4dfadf directly...
-Java compilation took 0.101075766 s
-Java analysis took 0.076372814 s
-Java compile + analysis took 0.181528783 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Dec 2, 2015 7:11:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@46d9267f, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@75e880c0 directly...
-Java compilation took 0.085668097 s
-Java analysis took 0.080128794 s
-Java compile + analysis took 0.171912496 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Dec 2, 2015 7:11:47 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@53b5f34c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed Dec 2, 2015 7:11:55 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@5f7b0ce0, check cycles: false
-Total time: 0 s, completed Dec 2, 2015 7:12:02 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@41dcbfb6, check cycles: false
-Total time: 0 s, completed Dec 2, 2015 7:12:05 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@1b17c42c, check cycles: false
-Total time: 0 s, completed Dec 2, 2015 7:12:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@5be3d959, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-Total time: 1 s, completed Dec 2, 2015 7:12:18 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@21fd199c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-Total time: 1 s, completed Dec 2, 2015 7:12:24 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@19d17a57, check cycles: false
-
-Initial source changes: 
-	removed:Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserSelection.java)
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserSelection.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserSelection.java)
-
-Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserSelection.java...
-Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserSelection.java...
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserSelection.java)
-Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserSelection.java)
-The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserSelection.java source file has the following regular definitions changed:
-	notify, wait, equals, checked, notifyAll, UserSelection, <init>, toString, getClass, hashCode.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed Dec 2, 2015 7:13:58 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4e31b947, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Dec 2, 2015 7:13:59 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6226b933, check cycles: false
-
-Initial source changes: 
-	removed:Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java)
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@522cbe86 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:49: cannot find symbol
-Read from stdout: symbol:   class UserCredential
-Read from stdout: location: class controllers.Application
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:49: cannot find symbol
-  symbol:   class UserCredential
-  location: class controllers.Application
-Read from stdout: UserCredential
-UserCredential
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:49: cannot find symbol
-Read from stdout: symbol:   class UserCredential
-Read from stdout: location: class controllers.Application
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:49: cannot find symbol
-  symbol:   class UserCredential
-  location: class controllers.Application
-Read from stdout: UserCredential
-UserCredential
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:50: cannot find symbol
-Read from stdout: symbol:   class UserCredential
-Read from stdout: location: class controllers.Application
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:50: cannot find symbol
-  symbol:   class UserCredential
-  location: class controllers.Application
-Read from stdout: UserCredential
-UserCredential
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:63: cannot find symbol
-Read from stdout: symbol:   class UserCredential
-Read from stdout: location: class controllers.Application
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:63: cannot find symbol
-  symbol:   class UserCredential
-  location: class controllers.Application
-Read from stdout: UserCredential
-UserCredential
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:63: cannot find symbol
-Read from stdout: symbol:   class UserCredential
-Read from stdout: location: class controllers.Application
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:63: cannot find symbol
-  symbol:   class UserCredential
-  location: class controllers.Application
-Read from stdout: UserCredential
-UserCredential
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:64: cannot find symbol
-Read from stdout: symbol:   class UserCredential
-Read from stdout: location: class controllers.Application
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java:64: cannot find symbol
-  symbol:   class UserCredential
-  location: class controllers.Application
-Read from stdout: UserCredential
-UserCredential
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 1 s, completed Dec 2, 2015 7:15:56 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@49090639, check cycles: false
-
-Initial source changes: 
-	removed:Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java)
-	added: Set()
-	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java, /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@84a705e directly...
-Java compilation took 0.454487628 s
-Java analysis took 0.0793464 s
-Java compile + analysis took 0.540460947 s
-Invalidating /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java...
-Invalidating (transitively) by inheritance from /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java...
-Initial set of included nodes: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java)
-Invalidated by transitive inheritance dependency: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java)
-The /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/models/UserCredential.java source file has the following regular definitions changed:
-	notify, wait, email, equals, UserCredential, notifyAll, <init>, toString, getClass, hashCode, password.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Dec 2, 2015 7:15:58 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1a6c880c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Dec 2, 2015 7:16:01 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> test
-Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@24d6180b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
-	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
-The models.ResumeList source file has the following regular definitions changed:
-	checked.
-All member reference dependencies will be considered within this context.
-Files invalidated by inheriting from (external) models.ResumeList: Set(); now invalidating by inheritance (internally).
-Getting direct dependencies of all sources transitively invalidated by inheritance.
-Getting sources that directly depend on (external) models.ResumeList.
-Name hashing optimization doesn't apply to non-Scala dependency: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set(NamesChange(models.ResumeList,ModifiedNames(regularNames = checked, implicitNames = )))
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java)
-
-Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/test-classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@5eeb9125 directly...
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java uses or overrides a deprecated API.
-Read from stdout: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/test/ModelTest.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.097280106 s
-Java analysis took 0.080833087 s
-Java compile + analysis took 0.181026073 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs2.runner.Specs2Framework' not present.
-Framework implementation 'org.specs2.runner.SpecsFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'org.scalatest.tools.Framework' not present.
-Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@5d29dc0f))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@6186860b), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@3caaeb5b))
-Forking tests - parallelism = false
-Create a single-thread test executor
-Runner for com.novocode.junit.JUnitFramework produced 2 initial tasks for 2 tests.
-  Running TaskDef(ApplicationTest, sbt.ForkMain$AnnotatedFingerscan@38727fb5, false, [SuiteSelector])
-Test run started
-Test ApplicationTest.simpleCheck started
-Test ApplicationTest.simpleCheck finished, took 0.003 sec
-Test ApplicationTest.renderTemplate started
-Test ApplicationTest.renderTemplate finished, took 0.54 sec
-Test run finished: 0 failed, 0 ignored, 2 total, 0.551s
-    Produced 0 nested tasks and 2 events.
-  Running TaskDef(ModelTest, sbt.ForkMain$AnnotatedFingerscan@125661a1, false, [SuiteSelector])
-Test run started
-Test ModelTest.UserAddTest started
-[info] - application - Creating Pool for datasource 'default'
-Test ModelTest.UserAddTest finished, took 2.776 sec
-Test ModelTest.ResumeListAddTest started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.ResumeListAddTest finished, took 0.222 sec
-Test ModelTest.renderTemplate started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.renderTemplate finished, took 0.136 sec
-Test ModelTest.JobCategoryAddTest started
-[info] - application - Creating Pool for datasource 'default'
-[info] - application - Shutting down connection pool.
-Test ModelTest.JobCategoryAddTest finished, took 0.123 sec
-Test run finished: 0 failed, 0 ignored, 4 total, 3.258s
-    Produced 0 nested tasks and 4 events.
-Summary for JUnit not available.
-Read from stdout: Passed: Total 6, Failed 0, Errors 0, Passed 6
-Passed: Total 6, Failed 0, Errors 0, Passed 6
-Passed tests:
-	ModelTest
-	ApplicationTest
-Total time: 5 s, completed Dec 2, 2015 7:16:11 PM
+Total time: 6 s, completed Dec 10, 2015 10:54:07 PM
 > server-post-command-cleanup
 > server-handle-next-server-request

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes
-// @DATE:Mon Nov 16 17:13:24 EST 2015
+// @DATE:Thu Dec 10 22:03:30 EST 2015
 
 package router
 
@@ -18,7 +18,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   Application_1: controllers.Application,
-  // @LINE:18
+  // @LINE:20
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -27,7 +27,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     Application_1: controllers.Application,
-    // @LINE:18
+    // @LINE:20
     Assets_0: controllers.Assets
   ) = this(errorHandler, Application_1, Assets_0, "/")
 
@@ -53,6 +53,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """jobcategory""", """controllers.Application.displayJobCategory()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """resumelist""", """controllers.Application.displayResumeList()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewresume""", """controllers.Application.viewResume()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """off""", """controllers.Application.logoff()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewresumex""", """controllers.Application.viewResumex()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -231,11 +233,45 @@ class Routes(
     )
   )
 
-  // @LINE:18
-  private[this] lazy val controllers_Assets_versioned10_route = Route("GET",
+  // @LINE:16
+  private[this] lazy val controllers_Application_logoff10_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("off")))
+  )
+  private[this] lazy val controllers_Application_logoff10_invoker = createInvoker(
+    Application_1.logoff(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "logoff",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """off"""
+    )
+  )
+
+  // @LINE:17
+  private[this] lazy val controllers_Application_viewResumex11_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("viewresumex")))
+  )
+  private[this] lazy val controllers_Application_viewResumex11_invoker = createInvoker(
+    Application_1.viewResumex(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "viewResumex",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """viewresumex"""
+    )
+  )
+
+  // @LINE:20
+  private[this] lazy val controllers_Assets_versioned12_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned10_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned12_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -311,10 +347,22 @@ class Routes(
         controllers_Application_viewResume9_invoker.call(Application_1.viewResume())
       }
   
-    // @LINE:18
-    case controllers_Assets_versioned10_route(params) =>
+    // @LINE:16
+    case controllers_Application_logoff10_route(params) =>
+      call { 
+        controllers_Application_logoff10_invoker.call(Application_1.logoff())
+      }
+  
+    // @LINE:17
+    case controllers_Application_viewResumex11_route(params) =>
+      call { 
+        controllers_Application_viewResumex11_invoker.call(Application_1.viewResumex())
+      }
+  
+    // @LINE:20
+    case controllers_Assets_versioned12_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned10_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned12_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

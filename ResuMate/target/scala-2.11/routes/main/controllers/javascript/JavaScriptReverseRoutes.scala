@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes
-// @DATE:Mon Nov 16 17:13:24 EST 2015
+// @DATE:Thu Dec 10 22:03:30 EST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:18
+  // @LINE:20
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:18
+    // @LINE:20
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -49,6 +49,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "resumelist"})
+        }
+      """
+    )
+  
+    // @LINE:17
+    def viewResumex: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.viewResumex",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "viewresumex"})
         }
       """
     )
@@ -119,6 +129,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+        }
+      """
+    )
+  
+    // @LINE:16
+    def logoff: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.logoff",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "off"})
         }
       """
     )

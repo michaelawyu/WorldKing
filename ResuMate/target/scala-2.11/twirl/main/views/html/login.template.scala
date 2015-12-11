@@ -38,7 +38,7 @@ Seq[Any](format.raw/*1.19*/("""
 </head>
 <body>
 	<div id="header">
-		<img src=""""),_display_(/*10.14*/routes/*10.20*/.Assets.versioned("images/logo.png")),format.raw/*10.56*/("""" class="logo" alt="Resumate">
+		<a href="/"><img src=""""),_display_(/*10.26*/routes/*10.32*/.Assets.versioned("images/logo.png")),format.raw/*10.68*/("""" class="logo" alt="Resumate"></a>
 		<ul>
 			<li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
 			<li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
@@ -82,10 +82,10 @@ Seq[Any](format.raw/*1.19*/("""
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 16 17:21:58 EST 2015
+                  DATE: Thu Dec 10 19:23:19 EST 2015
                   SOURCE: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/views/login.scala.html
-                  HASH: f148786fe06e70daea6c97d39c115157f8841e3d
-                  MATRIX: 745->1|857->18|884->19|1012->121|1026->127|1088->169|1165->219|1180->225|1237->261|1927->924|1955->931
+                  HASH: 8b714821623aee300fe565593a26f176e4c437eb
+                  MATRIX: 745->1|857->18|884->19|1012->121|1026->127|1088->169|1177->231|1192->237|1249->273|1943->940|1971->947
                   LINES: 27->1|32->1|33->2|37->6|37->6|37->6|41->10|41->10|41->10|55->24|55->24
                   -- GENERATED --
               */

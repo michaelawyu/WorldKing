@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.common.annotations.VisibleForTesting;
@@ -57,6 +54,52 @@ public class ModelTest {
         assertNotNull(testUser);
         assertEquals("email@email.com",testUser.email);
         assertEquals("password",testUser.password);
+    }
+
+    @Test
+    public void CommentAndRatingTest() {
+        Date date= new Date();
+        new CommentAndRating("1","1",date,"Comment",1,"1").save();
+        CommentAndRating testComment = CommentAndRating.find.byId("1");
+        assertNotNull(testComment);
+        assertEquals("1",testComment.userID);
+        assertEquals(date,testComment.dateAndTime);
+        assertEquals("Comment",testComment.content);
+        assertEquals(1,testComment.rating);
+        assertEquals("1",testComment.resumeID);
+    }
+
+    @Test
+    public void CandRAvgMethodTestA() {
+        Date date=new Date();
+        new CommentAndRating("1","1",date,"Comment",5,"1").save();
+        int avg = CommentAndRating.calculateAvgRating("1");
+        assertEquals(5,avg);
+    }
+
+    @Test
+    public void CandRAvgMethodTestB() {
+        Date date=new Date();
+        new CommentAndRating("1","1",date,"Comment",1,"1").save();
+        new CommentAndRating("2","1",date,"Comment",5,"1").save();
+        int avg = CommentAndRating.calculateAvgRating("1");
+        assertEquals(3,avg);
+    }
+
+    @Test
+    public void CandRAvgMethodTestC() {
+        int avg = CommentAndRating.calculateAvgRating("1");
+        assertEquals(0,avg);
+    }
+
+    @Test
+    public void CandRAvgMethodTestD() {
+        Date date=new Date();
+        new CommentAndRating("1","1",date,"Comment",1,"1").save();
+        new CommentAndRating("2","1",date,"Comment",5,"1").save();
+        new CommentAndRating("3","1",date,"Comment",5,"1").save();
+        int avg = CommentAndRating.calculateAvgRating("1");
+        assertEquals(3,avg);
     }
 
     @Test
