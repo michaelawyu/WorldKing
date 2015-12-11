@@ -131,6 +131,23 @@ public class Application extends Controller {
 
     }
 
+	public Result handleForm() {
+		Form<Resume> inputForm = Form.form(Resume.class).bindFromRequest();
+		//Resume newRes = Resume.initialize(
+				//inputForm.get().fullName,
+				//inputForm.get().emailAddress,
+				//inputForm.get().phoneNo,
+				//inputForm.get().street,
+				//inputForm.get().city,
+				//inputForm.get().zip,
+				//inputForm.get().schooladd1,
+				//inputForm.get().dateRange1,
+				//inputForm.get().schoolName1,
+				//inputForm.get().schoolTitle1
+				//);
+				return ok(genRes.render(true,session().get("email"),"Resumate: Build Your Own Resume"));
+	}
+
     public Result pdfViewer() {
         Form<Template> filledTemplate = templateForm.bindFromRequest();
         Template newResume = filledTemplate.get();
