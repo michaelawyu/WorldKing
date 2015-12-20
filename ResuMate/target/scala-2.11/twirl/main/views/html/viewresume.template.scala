@@ -21,21 +21,21 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class viewresume extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template5[Boolean,String,String,String,String,play.twirl.api.HtmlFormat.Appendable] {
+class viewresume extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template6[Boolean,String,String,String,List[CommentAndRating],Array[String],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(loginStatus: Boolean)(username: String)(filename: String)(resumeID: String)(commentContent: String):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(loginStatus: Boolean)(username: String)(filename: String)(resumeID: String)(allCommentInfo: List[CommentAndRating])(scoreInfo: Array[String]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.102*/("""
+Seq[Any](format.raw/*1.144*/("""
 
 """),format.raw/*3.1*/("""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resumate: Job Category</title>
+    <title>Resumate: View a Resume</title>
     <link rel="stylesheet" type="text/css" href=""""),_display_(/*8.51*/routes/*8.57*/.Assets.versioned("stylesheets/viewresume.css")),format.raw/*8.104*/("""">
 </head>
 <body>
@@ -54,37 +54,47 @@ Seq[Any](format.raw/*1.102*/("""
             """)))}),format.raw/*23.14*/("""
         """),format.raw/*24.9*/("""</ul>
     </div>
-    <div id="leftbody">
-        <iframe id="PDF" style="border:0px solid #666CCC" title="PDF" src="""),_display_(/*27.76*/filename),format.raw/*27.84*/(""" """),format.raw/*27.85*/("""frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
-    </div>
-    <div id="rightbody">
-        <h1 id="Rating">Rating</h1>
-        <h1 id="Score">5</h1>
-        <h1 id="ScoreExp">out of 5</h1>
-        <div id="form">
-            <form action="/viewresumex" method="POST">
-                <select id="select" name="rating">
-                    <option value="0" selected>Not Applicable</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <input id="text" type="text" name="content" maxlength="50"/>
-                <button id="submit"><i>submit</i></button>
-                <input type="hidden" name="resumeID" value="""),_display_(/*45.61*/resumeID),format.raw/*45.69*/(""" """),format.raw/*45.70*/("""/>
-                <input type="hidden" name="uniqueCommentID" value="1" />
-            </form>
+    <div id="frame">
+        <div id="leftbody">
+            <iframe id="PDF" style="border:0px solid #666CCC" title="PDF" src="""),_display_(/*28.80*/filename),format.raw/*28.88*/(""" """),format.raw/*28.89*/("""frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
         </div>
-        <div id="comment">
-            <div id="subcomment">
-                <p id="content">"""),_display_(/*51.34*/commentContent),format.raw/*51.48*/("""</p>
+        <div id="rightbody">
+            <div id="scorepanel">
+                <h1 id="score">"""),_display_(/*32.33*/scoreInfo(1)),format.raw/*32.45*/("""</h1>
+                <p id="number">from """),_display_(/*33.38*/scoreInfo(2)),format.raw/*33.50*/(""" """),format.raw/*33.51*/("""ratings</p>
+                <p id="best">★★★★★ """),_display_(/*34.37*/scoreInfo(3)),format.raw/*34.49*/("""</p>
+                <p id="good">★★★★ """),_display_(/*35.36*/scoreInfo(4)),format.raw/*35.48*/("""</p>
+                <p id="mediocre">★★★ """),_display_(/*36.39*/scoreInfo(5)),format.raw/*36.51*/("""</p>
+                <p id="bad">★★ """),_display_(/*37.33*/scoreInfo(6)),format.raw/*37.45*/("""</p>
+                <p id="worst">★ """),_display_(/*38.34*/scoreInfo(7)),format.raw/*38.46*/("""</p>
+            </div>
+            <div id="inputpanel">
+                    <form action="/viewresumex" method="POST">
+                        <input id="text" type="text" name="content" maxlength="50"/>
+                        <fieldset id="mainset" class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                        </fieldset>
+                        <button id="submit">submit</button>
+                        <input type="hidden" name="resumeID" value="""),_display_(/*51.69*/resumeID),format.raw/*51.77*/(""" """),format.raw/*51.78*/("""/>
+                    </form>
             </div>
 
+
+            <div id="commentpanel">
+                """),_display_(/*57.18*/for(p <- allCommentInfo) yield /*57.42*/ {_display_(Seq[Any](format.raw/*57.44*/("""
+                    """),format.raw/*58.21*/("""<div id="comment">
+                        <img id="profile" src=""""),_display_(/*59.49*/routes/*59.55*/.Assets.versioned("images/defaultprofile.png")),format.raw/*59.101*/(""""/>
+                        <h5 id="commentpublisher">"""),_display_(/*60.52*/p/*60.53*/.userID),format.raw/*60.60*/("""</h5>
+                        <h5 id="publishtime">"""),_display_(/*61.47*/p/*61.48*/.dateAndTimeTran),format.raw/*61.64*/("""</h5>
+                        <h5 id="content">"""),_display_(/*62.43*/p/*62.44*/.content),format.raw/*62.52*/("""</h5>
+                    </div>
+                """)))}),format.raw/*64.18*/("""
+            """),format.raw/*65.13*/("""</div>
         </div>
-
-
     </div>
 
 </body>
@@ -93,9 +103,9 @@ Seq[Any](format.raw/*1.102*/("""
     }
   }
 
-  def render(loginStatus:Boolean,username:String,filename:String,resumeID:String,commentContent:String): play.twirl.api.HtmlFormat.Appendable = apply(loginStatus)(username)(filename)(resumeID)(commentContent)
+  def render(loginStatus:Boolean,username:String,filename:String,resumeID:String,allCommentInfo:List[CommentAndRating],scoreInfo:Array[String]): play.twirl.api.HtmlFormat.Appendable = apply(loginStatus)(username)(filename)(resumeID)(allCommentInfo)(scoreInfo)
 
-  def f:((Boolean) => (String) => (String) => (String) => (String) => play.twirl.api.HtmlFormat.Appendable) = (loginStatus) => (username) => (filename) => (resumeID) => (commentContent) => apply(loginStatus)(username)(filename)(resumeID)(commentContent)
+  def f:((Boolean) => (String) => (String) => (String) => (List[CommentAndRating]) => (Array[String]) => play.twirl.api.HtmlFormat.Appendable) = (loginStatus) => (username) => (filename) => (resumeID) => (allCommentInfo) => (scoreInfo) => apply(loginStatus)(username)(filename)(resumeID)(allCommentInfo)(scoreInfo)
 
   def ref: this.type = this
 
@@ -108,11 +118,11 @@ Seq[Any](format.raw/*1.102*/("""
 object viewresume extends viewresume_Scope0.viewresume
               /*
                   -- GENERATED --
-                  DATE: Thu Dec 10 22:23:35 EST 2015
+                  DATE: Sat Dec 19 15:53:25 EST 2015
                   SOURCE: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/views/viewresume.scala.html
-                  HASH: 6ec29f9420af3a74bf99419f2cb43508a2f3fd48
-                  MATRIX: 784->1|980->101|1008->103|1193->262|1207->268|1275->315|1373->386|1388->392|1445->428|1782->738|1807->754|1847->756|1888->769|2085->948|2098->953|2137->954|2178->967|2255->1017|2284->1025|2417->1127|2453->1136|2596->1252|2625->1260|2654->1261|3559->2139|3588->2147|3617->2148|3849->2353|3884->2367
-                  LINES: 27->1|32->1|34->3|39->8|39->8|39->8|43->12|43->12|43->12|48->17|48->17|48->17|49->18|51->20|51->20|51->20|52->21|52->21|52->21|54->23|55->24|58->27|58->27|58->27|76->45|76->45|76->45|82->51|82->51
+                  HASH: e58315bc6341143fd2f183f5de09c0b071e03f25
+                  MATRIX: 814->1|1052->143|1080->145|1266->305|1280->311|1348->358|1446->429|1461->435|1518->471|1855->781|1880->797|1920->799|1961->812|2158->991|2171->996|2210->997|2251->1010|2328->1060|2357->1068|2490->1170|2526->1179|2698->1324|2727->1332|2756->1333|2961->1511|2994->1523|3064->1566|3097->1578|3126->1579|3201->1627|3234->1639|3301->1679|3334->1691|3404->1734|3437->1746|3501->1783|3534->1795|3599->1833|3632->1845|4779->2965|4808->2973|4837->2974|4969->3079|5009->3103|5049->3105|5098->3126|5192->3193|5207->3199|5275->3245|5357->3300|5367->3301|5395->3308|5474->3360|5484->3361|5521->3377|5596->3425|5606->3426|5635->3434|5716->3484|5757->3497
+                  LINES: 27->1|32->1|34->3|39->8|39->8|39->8|43->12|43->12|43->12|48->17|48->17|48->17|49->18|51->20|51->20|51->20|52->21|52->21|52->21|54->23|55->24|59->28|59->28|59->28|63->32|63->32|64->33|64->33|64->33|65->34|65->34|66->35|66->35|67->36|67->36|68->37|68->37|69->38|69->38|82->51|82->51|82->51|88->57|88->57|88->57|89->58|90->59|90->59|90->59|91->60|91->60|91->60|92->61|92->61|92->61|93->62|93->62|93->62|95->64|96->65
                   -- GENERATED --
               */
           

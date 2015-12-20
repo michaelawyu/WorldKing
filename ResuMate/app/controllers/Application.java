@@ -8,11 +8,11 @@ import play.mvc.*;
 import com.avaje.ebean.*;
 import play.data.*;
 import java.util.Date;
-import scala.concurrent.java8.FuturesConvertersImpl;
 import views.html.*;
 import it.innove.play.pdf.PdfGenerator;
 
 import java.util.List;
+import java.util.UUID;
 
 public class Application extends Controller {
 
@@ -21,34 +21,47 @@ public class Application extends Controller {
 
     public Result viewResumex() {
         Form<CommentAndRating> select = Form.form(CommentAndRating.class).bindFromRequest();
-        CommentAndRating newComment = new CommentAndRating(select.get().uniqueCommentID,"Guest",new Date(),select.get().content,select.get().rating,select.get().resumeID);
-        String filename = "/assets/resume/" + newComment.resumeID.toString() + ".pdf";
+        String username;
+        if (session().isEmpty()==true) {
+            username = "Guest";
+        }
+        else {
+            username = session().get("email");
+        }
+        CommentAndRating newComment = new CommentAndRating(username,new Date(),select.get().content,select.get().rating,select.get().resumeID);
+        newComment.save();
+        String filename = "/assets/resume/" + newComment.resumeID + ".pdf";
+        List<CommentAndRating> allCommentInfo = CommentAndRating.retrieveAllInfo(newComment.resumeID);
+        String scoreInfo[] = CommentAndRating.collectRating(newComment.resumeID);
         if (session().isEmpty()) {
-            return ok(views.html.viewresume.render(false,"",filename,newComment.resumeID.toString(),newComment.content));
+            return ok(views.html.viewresume.render(false,"",filename,newComment.resumeID,allCommentInfo,scoreInfo));
         } else {
-            return ok(views.html.viewresume.render(true,session().get("email"),filename,newComment.resumeID.toString(),newComment.content));
+            return ok(views.html.viewresume.render(true,session().get("email"),filename,newComment.resumeID,allCommentInfo,scoreInfo));
         }
     }
     public Result viewResume() {
         Form<ResumeList> select = Form.form(ResumeList.class).bindFromRequest();
         ResumeList selectResume = ResumeList.find.byId(select.get().checked);
-        String filename = "/assets/resume/" + selectResume.resumeUniqueID.toString() + ".pdf";
+        String filename = "/assets/resume/" + selectResume.resumeUniqueID + ".pdf";
+        List<CommentAndRating> allCommentInfo = CommentAndRating.retrieveAllInfo(selectResume.resumeUniqueID);
+        String[] scoreInfo = CommentAndRating.collectRating(selectResume.resumeUniqueID);
         if (session().isEmpty()) {
-            return ok(views.html.viewresume.render(false,"",filename,selectResume.resumeUniqueID.toString(),""));
+            return ok(views.html.viewresume.render(false,"",filename,selectResume.resumeUniqueID,allCommentInfo,scoreInfo));
         } else {
-            return ok(views.html.viewresume.render(true,session().get("email"),filename,selectResume.resumeUniqueID.toString(),""));
+            return ok(views.html.viewresume.render(true,session().get("email"),filename,selectResume.resumeUniqueID,allCommentInfo,scoreInfo));
         }
 
     }
 
     public Result displayResumeList() {
-        if (i==0) {
+        if (i==1) {
             new ResumeList("1", "1", "Elegant").save();
-            i=1;
+            i=2;
         }
 
         Form<ResumeList> select = Form.form(ResumeList.class).bindFromRequest();
         List<ResumeList> allList = ResumeList.find.where().eq("Location",select.get().checked).findList();
+
         if (session().isEmpty()) {
             return ok(views.html.resumelist.render(false,"",allList));
         } else {
@@ -59,8 +72,8 @@ public class Application extends Controller {
 
     public Result displayJobCategory() {
         if (i==0) {
-            new JobCategory("1","Work","Code. Code. Code.").save();
-            new JobCategory("2","Life","Code. Code. Code.").save();
+            //new JobCategory("1","Work","Code. Code. Code.").save();
+            //new JobCategory("2","Life","Code. Code. Code.").save();
             i=1;
         }
         List<JobCategory> allList = JobCategory.find.all();

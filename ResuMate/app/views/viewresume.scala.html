@@ -1,10 +1,10 @@
-@(loginStatus: Boolean)(username: String)(filename: String)(resumeID: String)(commentContent: String)
+@(loginStatus: Boolean)(username: String)(filename: String)(resumeID: String)(allCommentInfo: List[CommentAndRating])(scoreInfo: Array[String])
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resumate: Job Category</title>
+    <title>Resumate: View a Resume</title>
     <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/viewresume.css")">
 </head>
 <body>
@@ -23,37 +23,47 @@
             }
         </ul>
     </div>
-    <div id="leftbody">
-        <iframe id="PDF" style="border:0px solid #666CCC" title="PDF" src=@filename frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
-    </div>
-    <div id="rightbody">
-        <h1 id="Rating">Rating</h1>
-        <h1 id="Score">5</h1>
-        <h1 id="ScoreExp">out of 5</h1>
-        <div id="form">
-            <form action="/viewresumex" method="POST">
-                <select id="select" name="rating">
-                    <option value="0" selected>Not Applicable</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <input id="text" type="text" name="content" maxlength="50"/>
-                <button id="submit"><i>submit</i></button>
-                <input type="hidden" name="resumeID" value=@resumeID />
-                <input type="hidden" name="uniqueCommentID" value="1" />
-            </form>
+    <div id="frame">
+        <div id="leftbody">
+            <iframe id="PDF" style="border:0px solid #666CCC" title="PDF" src=@filename frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
         </div>
-        <div id="comment">
-            <div id="subcomment">
-                <p id="content">@commentContent</p>
+        <div id="rightbody">
+            <div id="scorepanel">
+                <h1 id="score">@scoreInfo(1)</h1>
+                <p id="number">from @scoreInfo(2) ratings</p>
+                <p id="best">★★★★★ @scoreInfo(3)</p>
+                <p id="good">★★★★ @scoreInfo(4)</p>
+                <p id="mediocre">★★★ @scoreInfo(5)</p>
+                <p id="bad">★★ @scoreInfo(6)</p>
+                <p id="worst">★ @scoreInfo(7)</p>
+            </div>
+            <div id="inputpanel">
+                    <form action="/viewresumex" method="POST">
+                        <input id="text" type="text" name="content" maxlength="50"/>
+                        <fieldset id="mainset" class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                        </fieldset>
+                        <button id="submit">submit</button>
+                        <input type="hidden" name="resumeID" value=@resumeID />
+                    </form>
             </div>
 
+
+            <div id="commentpanel">
+                @for(p <- allCommentInfo) {
+                    <div id="comment">
+                        <img id="profile" src="@routes.Assets.versioned("images/defaultprofile.png")"/>
+                        <h5 id="commentpublisher">@p.userID</h5>
+                        <h5 id="publishtime">@p.dateAndTimeTran</h5>
+                        <h5 id="content">@p.content</h5>
+                    </div>
+                }
+            </div>
         </div>
-
-
     </div>
 
 </body>

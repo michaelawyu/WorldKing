@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes
-// @DATE:Thu Dec 10 22:03:30 EST 2015
+// @DATE:Wed Dec 16 01:27:01 EST 2015
 
 
 package router {

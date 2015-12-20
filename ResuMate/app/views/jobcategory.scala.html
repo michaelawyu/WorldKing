@@ -23,8 +23,46 @@
             }
         </ul>
     </div>
+    <div id="theme">
+        <div id="content">
+            <div id="pics">
+                <img id="roboticon" src="@routes.Assets.versioned("images/roboticon.png")"/>
+                <img id="guitaricon" src="@routes.Assets.versioned("images/guitaricon.png")"/>
+                <img id="cameraicon" src="@routes.Assets.versioned("images/cameraicon.png")"/>
+            </div>
+            <div id="text">
+                <div id="title">
+                    <p>Pick A Job Category to Start</p>
+                </div>
+                <div id="description">
+                    <p>Different fields have different expectations for job seekers. Their idea of perfect resume also varies accordingly. Start with any category you are interested in below and see how the professionals tailor their resumes to the fittest.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ST">
+        <div id="labelTechnology">
+            <p id="labelTechnology">Science and Technology</p>
+        </div>
+        <div id="content">
+            <form action="/resumelist" method="POST">
+                <button id="test">Test</button>
+                <input type="hidden" name="checked" value="1">
+            </form>
+        </div>
+
+    </div>
+    <div id="Art">
+        <div id="labelArt">
+            <p id="labelArt">Art and Design</p>
+        </div>
+        <div id="content">
+
+        </div>
+    </div>
+
     <div id="body">
-        <h1 id="title">Pick A Job Category to Start</h1>
+
         <div id="channel">
             @for(p <- allList) {
                 <form action="/resumelist" method="POST">
