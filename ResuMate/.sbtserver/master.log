@@ -341,3 +341,68 @@ Copy resource mappings:
 Total time: 1 s, completed Dec 20, 2015 12:10:56 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@54eb4b01, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1c32b6fd directly...
+Java compilation took 0.432420417 s
+Java analysis took 0.211543257 s
+Java compile + analysis took 0.653757863 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Dec 20, 2015 12:16:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@e73ec1c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)
+	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)
+Total time: 1 s, completed Dec 20, 2015 12:16:32 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

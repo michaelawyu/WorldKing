@@ -43,7 +43,10 @@ public class Application extends Controller {
             username = session().get("email");
         }
         CommentAndRating newComment = new CommentAndRating(username,new Date(),select.get().content,select.get().rating,select.get().resumeID);
-        newComment.save();
+        if (newComment.content!="" && newComment.rating!=0)
+        {
+            newComment.save();
+        }
         String filename = "/assets/resume/" + newComment.resumeID + ".pdf";
         List<CommentAndRating> allCommentInfo = CommentAndRating.retrieveAllInfo(newComment.resumeID);
         String scoreInfo[] = CommentAndRating.collectRating(newComment.resumeID);
