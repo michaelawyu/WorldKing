@@ -18,6 +18,8 @@ create table job_category (
   job_category_id           varchar(255) not null,
   job_category_name         varchar(255),
   job_category_description  varchar(255),
+  category_type             varchar(255),
+  icon_location             varchar(255),
   constraint pk_job_category primary key (job_category_id))
 ;
 
@@ -60,6 +62,15 @@ create table resume_list (
   location                  varchar(255),
   resume_name               varchar(255),
   checked                   varchar(255),
+  creator                   varchar(255),
+  content                   varchar(255),
+  first_name                varchar(255),
+  last_name                 varchar(255),
+  phone_no                  varchar(255),
+  email_addr                varchar(255),
+  work_exp                  varchar(255),
+  edu_exp                   varchar(255),
+  preview_location          varchar(255),
   constraint pk_resume_list primary key (resume_unique_id))
 ;
 

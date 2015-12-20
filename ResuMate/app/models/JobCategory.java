@@ -11,11 +11,15 @@ public class JobCategory extends Model{
     public String jobCategoryID;
     public String jobCategoryName;
     public String jobCategoryDescription;
+    public String categoryType;
+    public String iconLocation;
 
-    public JobCategory(String jobCategoryID, String jobCategoryName, String jobCategoryDescription) {
+    public JobCategory(String jobCategoryID, String jobCategoryName, String jobCategoryDescription, String categoryType) {
         this.jobCategoryID=jobCategoryID;
         this.jobCategoryName=jobCategoryName;
         this.jobCategoryDescription=jobCategoryDescription;
+        this.categoryType=categoryType;
+        iconLocation="/assets/images/CategoryIcons/"+jobCategoryID+".png";
     }
 
     public static Finder<String,JobCategory> find = new Finder<String,JobCategory>(

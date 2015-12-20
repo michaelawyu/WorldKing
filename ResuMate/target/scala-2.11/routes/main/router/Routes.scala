@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes
-// @DATE:Wed Dec 16 01:27:01 EST 2015
+// @DATE:Sun Dec 20 09:08:01 EST 2015
 
 package router
 
@@ -18,7 +18,7 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   Application_1: controllers.Application,
-  // @LINE:21
+  // @LINE:22
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -27,7 +27,7 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     Application_1: controllers.Application,
-    // @LINE:21
+    // @LINE:22
     Assets_0: controllers.Assets
   ) = this(errorHandler, Application_1, Assets_0, "/")
 
@@ -55,6 +55,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewresume""", """controllers.Application.viewResume()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """off""", """controllers.Application.logoff()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """viewresumex""", """controllers.Application.viewResumex()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """search""", """controllers.Application.search()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """handleForm""", """controllers.Application.handleForm()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
@@ -269,10 +270,27 @@ class Routes(
   )
 
   // @LINE:18
-  private[this] lazy val controllers_Application_handleForm12_route = Route("POST",
+  private[this] lazy val controllers_Application_search12_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("search")))
+  )
+  private[this] lazy val controllers_Application_search12_invoker = createInvoker(
+    Application_1.search(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "search",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """search"""
+    )
+  )
+
+  // @LINE:19
+  private[this] lazy val controllers_Application_handleForm13_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("handleForm")))
   )
-  private[this] lazy val controllers_Application_handleForm12_invoker = createInvoker(
+  private[this] lazy val controllers_Application_handleForm13_invoker = createInvoker(
     Application_1.handleForm(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -285,11 +303,11 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_Assets_versioned13_route = Route("GET",
+  // @LINE:22
+  private[this] lazy val controllers_Assets_versioned14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned13_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned14_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -378,15 +396,21 @@ class Routes(
       }
   
     // @LINE:18
-    case controllers_Application_handleForm12_route(params) =>
+    case controllers_Application_search12_route(params) =>
       call { 
-        controllers_Application_handleForm12_invoker.call(Application_1.handleForm())
+        controllers_Application_search12_invoker.call(Application_1.search())
       }
   
-    // @LINE:21
-    case controllers_Assets_versioned13_route(params) =>
+    // @LINE:19
+    case controllers_Application_handleForm13_route(params) =>
+      call { 
+        controllers_Application_handleForm13_invoker.call(Application_1.handleForm())
+      }
+  
+    // @LINE:22
+    case controllers_Assets_versioned14_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned13_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned14_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }

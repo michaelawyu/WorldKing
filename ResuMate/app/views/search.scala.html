@@ -1,0 +1,65 @@
+@(loginStatus: Boolean)(username: String)(categoryList: List[ResumeList])(allList: List[ResumeList])
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumate: Search</title>
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/search.css")">
+</head>
+<body>
+    <div id="header">
+        <a href="/"><img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate"></a>
+        <ul>
+            <li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
+            <li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
+            <li id="About"><a class="headerlink" href="/about">About</a></li>
+            @if(!loginStatus) {
+            <li id="Login"><a class="headerlink" href="/login">Login</a></li>
+            <li id="Registration"><a class="headerlink" href="/registration">Registration</a></li>
+            } else {
+            <li id="Username"><a class="headerlink" href="/">@username</a></li>
+            <li id="Logoff"><a class="headerlink" href="/off">Log Off</a></li>
+            }
+        </ul>
+    </div>
+    <div id="body">
+        <div id="theme">
+            <img id="icon" src="@routes.Assets.versioned("images/search.png")"/>
+            <div id="categoryLabel">
+                <p id="subtitle">current category</p>
+                <p id="title">SEARCH RESULT</p>
+            </div>
+        </div>
+
+        <div id="searchlabela">
+            <p id="searchlabela">Global</p>
+        </div>
+        <div id="searchpanela">
+            @for(p <- allList){
+            <div id="resume">
+                <form action="/viewresume" method="POST">
+                    <button id="open"></button>
+                    <input type="hidden" name="checked" value=@p.resumeUniqueID >
+                </form>
+                <img id="preview" src=@p.previewLocation />
+                <div id="caption">
+                    <p id="resumename">@p.resumeName</p>
+                    <p id="author">☮ @p.creator</p>
+                </div>
+            </div>
+            }
+        </div>
+
+        <!--<h1 id="title">Pick A Resume File to Start</h1>
+        <div id="channel">
+            @for(p <- allList) {
+                <form action="/viewresume" method="POST">
+                    <button>@p.resumeName</button>
+                    <input type="hidden" name="checked" value="@p.resumeUniqueID">
+                </form>
+            }
+        </div>-->
+    </div>
+</body>
+</html>

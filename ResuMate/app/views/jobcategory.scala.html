@@ -1,4 +1,4 @@
-@(loginStatus: Boolean)(username: String)(allList: List[JobCategory])
+@(loginStatus: Boolean)(username: String)(ListA: List[JobCategory])(ListB: List[JobCategory])
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,11 +45,19 @@
             <p id="labelTechnology">Science and Technology</p>
         </div>
         <div id="content">
-            <form action="/resumelist" method="POST">
-                <button id="test">Test</button>
-                <input type="hidden" name="checked" value="1">
-            </form>
+            <div id="categoryListA">
+                @for(p <- ListA) {
+                    <div id="categoryItemA">
+                        <img id="categoryIcon" src=@p.iconLocation />
+                        <form action="/resumelist" method="POST">
+                            <button id="button">@p.jobCategoryName</button>
+                            <input type="hidden" name="checked" value="@p.jobCategoryID">
+                        </form>
+                    </div>
+                }
+            </div>
         </div>
+    </div>
 
     </div>
     <div id="Art">
@@ -57,20 +65,20 @@
             <p id="labelArt">Art and Design</p>
         </div>
         <div id="content">
-
+            <div dir="rtl" id="categoryListB">
+                @for(p<-ListB){
+                    <div id="categoryItemB">
+                        <img id="categoryIcon" src=@p.iconLocation />
+                        <form action="/resumelist" method="POST">
+                            <button id="button">@p.jobCategoryName</button>
+                            <input type="hidden" name="checked" value="@p.jobCategoryID">
+                        </form>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 
-    <div id="body">
 
-        <div id="channel">
-            @for(p <- allList) {
-                <form action="/resumelist" method="POST">
-                    <button>@p.jobCategoryName</button>
-                    <input type="hidden" name="checked" value="@p.jobCategoryID">
-                </form>
-            }
-        </div>
-    </div>
 </body>
 </html>

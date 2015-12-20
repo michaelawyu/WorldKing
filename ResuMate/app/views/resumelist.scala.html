@@ -1,4 +1,4 @@
-@(loginStatus: Boolean)(username: String)(allList: List[ResumeList])
+@(loginStatus: Boolean)(username: String)(allList: List[ResumeList])(Location: String)(upperCategoryName: String)(iconLocation: String)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +24,38 @@
         </ul>
     </div>
     <div id="body">
-        <h1 id="title">Pick A Resume File to Start</h1>
+        <div id="theme">
+            <img id="icon" src=@iconLocation />
+            <div id="categoryLabel">
+                <p id="subtitle">current category</p>
+                <p id="title">@upperCategoryName</p>
+            </div>
+        </div>
+        <div id="search">
+            <div id="searchbox">
+                <form action="/search" method="post">
+                    <input id="searchbox" type="text" name="searchparam" maxlength="30"/>
+                    <input type="hidden" name="Location" value=@Location >
+                    <input id="switch" type="image" src="@routes.Assets.versioned("images/searchswitch.png")"/>
+                </form>
+            </div>
+        </div>
+        <div id="resumepanel">
+            @for(p <- allList){
+                <div id="resume">
+                    <form action="/viewresume" method="POST">
+                        <button id="open"></button>
+                        <input type="hidden" name="checked" value=@p.resumeUniqueID >
+                    </form>
+                    <img id="preview" src=@p.previewLocation />
+                    <div id="caption">
+                        <p id="resumename">@p.resumeName</p>
+                        <p id="author">☮ @p.creator</p>
+                    </div>
+                 </div>
+            }
+        </div>
+        <!--<h1 id="title">Pick A Resume File to Start</h1>
         <div id="channel">
             @for(p <- allList) {
                 <form action="/viewresume" method="POST">
@@ -32,7 +63,7 @@
                     <input type="hidden" name="checked" value="@p.resumeUniqueID">
                 </form>
             }
-        </div>
+        </div>-->
     </div>
 </body>
 </html>

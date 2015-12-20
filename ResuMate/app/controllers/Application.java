@@ -19,6 +19,20 @@ public class Application extends Controller {
     int i = 0;
     final static Form<Template> templateForm = Form.form(Template.class);
 
+    public Result search(){
+        Form<Utility> search = Form.form(Utility.class).bindFromRequest();
+        String searchParam = search.get().searchparam;
+        String currentLocation = search.get().Location;
+        List<ResumeList> categoryList = Utility.searchWithinCategory(currentLocation,searchParam);
+        List<ResumeList> allList = Utility.searchGlobal(searchParam);
+
+        if (session().isEmpty()) {
+            return ok(views.html.search.render(false,"",categoryList,allList));
+        } else {
+            return ok(views.html.search.render(true,session().get("email"),categoryList,allList));
+        }
+    }
+
     public Result viewResumex() {
         Form<CommentAndRating> select = Form.form(CommentAndRating.class).bindFromRequest();
         String username;
@@ -54,33 +68,27 @@ public class Application extends Controller {
     }
 
     public Result displayResumeList() {
-        if (i==1) {
-            new ResumeList("1", "1", "Elegant").save();
-            i=2;
-        }
-
         Form<ResumeList> select = Form.form(ResumeList.class).bindFromRequest();
         List<ResumeList> allList = ResumeList.find.where().eq("Location",select.get().checked).findList();
-
+        String Location = select.get().checked;
+        String CategoryName = JobCategory.find.where().eq("jobCategoryID",Location).findUnique().jobCategoryName;
+        String upperCategoryName = CategoryName.toUpperCase();
+        String iconLocation = "/assets/images/CategoryIcons/"+Location+".png";
         if (session().isEmpty()) {
-            return ok(views.html.resumelist.render(false,"",allList));
+            return ok(views.html.resumelist.render(false,"",allList,Location,upperCategoryName,iconLocation));
         } else {
-            return ok(views.html.resumelist.render(true,session().get("email"),allList));
+            return ok(views.html.resumelist.render(true,session().get("email"),allList,Location,upperCategoryName,iconLocation));
         }
 
     }
 
     public Result displayJobCategory() {
-        if (i==0) {
-            //new JobCategory("1","Work","Code. Code. Code.").save();
-            //new JobCategory("2","Life","Code. Code. Code.").save();
-            i=1;
-        }
-        List<JobCategory> allList = JobCategory.find.all();
+        List<JobCategory> ListA = JobCategory.find.where().eq("categoryType","1").findList();
+        List<JobCategory> ListB = JobCategory.find.where().eq("categoryType","2").findList();
         if (session().isEmpty()) {
-            return ok(views.html.jobcategory.render(false,"",allList));
+            return ok(views.html.jobcategory.render(false,"",ListA,ListB));
         } else {
-            return ok(views.html.jobcategory.render(true,session().get("email"),allList));
+            return ok(views.html.jobcategory.render(true,session().get("email"),ListA,ListB));
         }
 
     }
@@ -124,6 +132,9 @@ public class Application extends Controller {
 
     public Result index() {
         Http.Session session = session();
+        if (Utility.counter==0){
+            Utility.init();
+        }
         if (session.isEmpty())
         {
             Boolean loginStatus = false;

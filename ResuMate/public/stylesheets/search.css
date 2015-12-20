@@ -1,0 +1,317 @@
+body {
+	background-color:#ffffff;
+}
+div#searchlabelb{
+    width:200px;
+    height:50px;
+    position:absolute;
+    top:650px;
+    left:0px;
+    background-color:#000080;
+    box-shadow:2px 2px 2px #888888;
+}
+p#searchlabelb{
+    font-family:"PingFang SC", Helvetica;
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:-10px;
+    right:10px;
+    text-shadow:1px 1px 1px #888888;
+}
+div#searchpanelb{
+    width:800px;
+    height:280px;
+    position:absolute;
+    top:650px;
+    left:50%;
+    margin-left:-400px;
+    border-width:2px;
+    border-color:red;
+    border-style:solid;
+}
+div#searchlabela{
+    width:200px;
+    height:50px;
+    position:absolute;
+    top:350px;
+    left:0px;
+    background-color:#000080;
+    box-shadow:2px 2px 2px #888888;
+}
+p#searchlabela{
+    font-family:"PingFang SC", Helvetica;
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:-10px;
+    right:10px;
+    text-shadow:1px 1px 1px #888888;
+}
+div#searchpanela{
+    width:800px;
+    height:280px;
+    position:absolute;
+    top:350px;
+    left:50%;
+    margin-left:-400px;
+
+}
+button#open{
+        position:relative;
+        display:inline-block;
+        width:200px;
+        height:260px;
+        top:0px;
+        left:0px;
+        border-width:0px;
+        border:0px;
+        margin:5px;
+        background-color:rgba(0,0,0,0);
+        z-index:40;
+}
+img#preview{
+    position:absolute;
+    top:0px;
+    left:10px;
+    width:180px;
+    height:220px;
+}
+p#resumename{
+    font-family:"PingFang SC", Helvetica;
+    font-size:18px;
+    position:absolute;
+    bottom:0px;
+    left:10px;
+    text-shadow:0.5px 0.5px 0.5px #888888;
+
+}
+p#author{
+    position:absolute;
+    font-family:"PingFang SC", Helvetica;
+    font-size:12px;
+    bottom:-10px;
+    left:10px;
+    text-shadow:0.5px 0.5px 0.5px #888888;
+}
+div#caption{
+    position:absolute;
+    width:200px;
+    height:40px;
+    border-top:1px solid #bfbfbf;
+
+    bottom:0px;
+    left:0px;
+}
+div#resume{
+    position:relative;
+    display:inline-block;
+    width:200px;
+    height:260px;
+    top:0px;
+    left:0px;
+    border-width:1px;
+    border-color:#808080;
+    border-style:solid;
+    box-shadow: 2px 2px 2px #333333;
+    margin:5px;
+    z-index:20;
+}
+div#search{
+    position:absolute;
+    width:100%;
+    height:50px;
+    top:300px;
+    left:0px;
+}
+div#searchbox{
+    position:absolute;
+    width:700px;
+    height:50px;
+    top:300px;
+    left:0px;
+    top:50%;
+    left:50%;
+    margin-top:-25px;
+    margin-left:-350px;
+
+
+}
+
+input#searchbox{
+    position:absolute;
+    width:600px;
+    height:30px;
+    top:5px;
+    left:0px;
+    background-color:#ffffff;
+}
+input#switch{
+    position:absolute;
+    height:36px;
+    top:5px;
+    left:606px;
+    background-color:#FFA500;
+}
+div#theme{
+    width:100%;
+    height:300px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:10;
+    background-image: url("../images/resumeListTheme.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 100%;
+
+}
+div#categoryLabel{
+    position:absolute;
+    left:180px;
+    width:600px;
+    height:100px;
+    top:220px;
+
+}
+img#icon{
+    position:absolute;
+    width:200px;
+    height:180px;
+    top:105px;
+    left:-35px;
+
+}
+p#subtitle{
+    position:absolute;
+    font-family:"PingFang SC", Helvetica;
+    top:-59px;
+    left:00px;
+    font-size:24px;
+    color: white;
+    text-shadow: 1px 1px 1px #888888;
+    background-color:rgba(204,204,204,0.8);
+}
+p#title{
+    position:absolute;
+    font-family:"PingFang SC", Helvetica;
+    top:-50px;
+    left:0px;
+    font-size:48px;
+    color: white;
+    text-shadow: 1px 1px 1px #888888;
+    background-color:rgba(204,204,204,0.8);
+}
+h1#title{
+    color:white;
+    font-family: "PingFang SC", Helvetica;
+    position:absolute;
+    top:20%;
+    left:36%;
+}
+div#channel{
+
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -500px;
+}
+button{
+    width: 20%;
+    height: 18%;
+    text-align: center;
+    float: left;
+    margin: 20px;
+    font-family: "PingFang SC", Helvetica;
+    font-size:24px;
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: rgba(255,255,255,0.2);
+    color:white;
+}
+
+div#header{
+	background-color: hsla(10,0%,0%,0.6);
+	padding: 10px;
+	width: 100%;
+	height: 46px;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index:50;
+}
+
+a.headerlink:link{
+	text-decoration: none;
+	color: white;
+}
+a.headerlink:visited{
+	text-decoration: none;
+	color: white;
+}
+li{
+	font-family: "PingFang SC", Helvetica;
+	font-size: 18px;
+}
+li#Discover{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 140px;
+}
+li#Create{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 270px;
+}
+li#About{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 15px;
+	left: 387px;
+}
+li#Login{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 14px;
+	right: 215px;
+}
+li#Registration{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 14px;
+	right: 50px;
+}
+li#Username{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 14px;
+	right: 205px;
+}
+li#Logoff{
+	display: inline;
+	padding: 5px;
+	position: fixed;
+	top: 14px;
+	right: 50px;
+}
+img.logo{
+	width: 46px;
+	height: 54px;
+	float: left;
+	position: fixed;
+	top: 5px;
+	left: 36px;
+}
