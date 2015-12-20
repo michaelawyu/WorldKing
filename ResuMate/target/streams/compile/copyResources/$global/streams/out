@@ -1,9 +1,9 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/application.conf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts)[0m
-[0m[[0mdebug[0m] [0m	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/logback.xml,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)[0m
-[0m[[0mdebug[0m] [0m	(/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/application.conf,/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/evolutions,/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/fonts,/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/target/scala-2.11/classes/fonts)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/logback.xml,/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/routes,/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/evolutions/default,/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/evolutions/default/1.sql,/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/target/scala-2.11/classes/evolutions/default/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/fonts/Helvetica Neue.ttf,/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/target/scala-2.11/classes/fonts/Helvetica Neue.ttf)[0m

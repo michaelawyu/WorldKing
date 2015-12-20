@@ -4,6 +4,9 @@
 <head>
 	<title>Resumate</title>
 	<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/registration.css")">
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/freelancer.css")">
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/font-awesome/css/font-awesome.min.css")">
 </head>
 <body>
 	<div id="header">
@@ -11,10 +14,10 @@
 		<ul>
 			<li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
 			<li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
-			<li id="About"><a class="headerlink" href="/about">About</a></li>
+			<!--<li id="About"><a class="headerlink" href="/about">About</a></li>-->
 		</ul>
 	</div>
-		<div id="body">
+	<!--	<div id="body">
 		<div class="upperbody">
 			<form action="/registration" method="POST">
 				<input type="email" id="email" name="email" maxlength="30" value="Email Address" required="required"/>
@@ -27,8 +30,47 @@
 			<h3 class="About">Project for Advanced Software Engineering (W4156)</h3>
 			<h3 class="NextAbout">Chen Yu (cy2415), Luis Alberto Ramirez (lar2195), Dongren You (dy2284), Ramses Driskell (rd2491)</h3>
 		</div>
-
-
+    -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Registration</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form action="/registration" method="POST">
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required data-validation-required-message="Please enter your email address." required="required"/>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Password</label>
+                                <input type="password" class="form-control" placeholder="Password" name="password" id="password" required data-validation-required-message="Please enter your phone number." required="required"/>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg" id="submit" value="Registration"/>Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <h3 id="message">@message</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 	</div>
+
 </body>
 </html>

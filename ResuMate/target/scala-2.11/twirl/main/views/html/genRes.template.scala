@@ -109,8 +109,8 @@ Seq[Any](format.raw/*1.57*/("""
 object genRes extends genRes_Scope0.genRes
               /*
                   -- GENERATED --
-                  DATE: Sun Dec 20 12:09:51 EST 2015
-                  SOURCE: /Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/app/views/genRes.scala.html
+                  DATE: Sun Dec 20 12:19:36 EST 2015
+                  SOURCE: /Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/app/views/genRes.scala.html
                   HASH: 275082d198ed61aecbdc09daf73e6ac3414f7728
                   MATRIX: 762->1|912->56|940->58|1005->97|1030->102|1112->158|1126->164|1189->207|1276->267|1291->273|1348->309|1646->580|1661->586|1722->626
                   LINES: 27->1|32->1|34->3|37->6|37->6|38->7|38->7|38->7|42->11|42->11|42->11|50->19|50->19|50->19

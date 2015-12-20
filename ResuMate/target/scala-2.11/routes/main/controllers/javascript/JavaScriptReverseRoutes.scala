@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/MichaelAWYu/Documents/UnloadingYard/WorldKing/ResuMate/conf/routes
-// @DATE:Sun Dec 20 12:07:11 EST 2015
+// @SOURCE:/Users/ydrtc/ase_final/WorldKing/WorldKing/ResuMate/conf/routes
+// @DATE:Sun Dec 20 12:19:36 EST 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
