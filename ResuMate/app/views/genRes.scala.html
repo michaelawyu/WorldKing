@@ -2,260 +2,60 @@
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>@title</title>
-		<!-- Latest compiled and minified bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<!-- Latest compiled and minified bootstrap JavaScript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script>
-			$(document).ready(function() {
-				$("#schooladd1").click(function() {$(".school1").prop("disabled", false);});
-				$("#schooldontadd1").click(function() {$(".school1").prop("disabled", true);});
-				$("#schooladd2").click(function() {$(".school2").prop("disabled", false);});
-				$("#schooldontadd2").click(function() {$(".school2").prop("disabled", true);});
-				$("#schooladd3").click(function() {$(".school3").prop("disabled", false);});
-				$("#schooldontadd3").click(function() {$(".school3").prop("disabled", true);});
-
-				$("#expadd1").click(function() {$(".exp1").prop("disabled", false);});
-				$("#expdontadd1").click(function() {$(".exp1").prop("disabled", true);});
-				$("#expadd2").click(function() {$(".exp2").prop("disabled", false);});
-				$("#expdontadd2").click(function() {$(".exp2").prop("disabled", true);});
-				$("#expadd3").click(function() {$(".exp3").prop("disabled", false);});
-				$("#expdontadd3").click(function() {$(".exp3").prop("disabled", true);});
-			});
-		</script>
-	</head>
-	<body>
-		<div id="header">
-			<img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate">
-			<ul>
-				<li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
-				<li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
-				<li id="About"><a class="headerlink" href="/about">About</a></li>
-			</ul>
+<head>
+	<title>@title</title>
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/genRes.css")">
+</head>
+<body>
+<div id="header">
+	<a href="/"><img src="@routes.Assets.versioned("images/logo.png")" class="logo" alt="Resumate"></a>
+	<ul>
+		<li id="Discover"><a class="headerlink" href="/jobcategory">Discover</a></li>
+		<li id="Create"><a class="headerlink" href="/genRes">Create</a></li>
+	</ul>
+</div>
+<div id="body">
+	<div id="LeftPanel">
+		<img id="Firework" src="@routes.Assets.versioned("images/firework.png")" alt="Firework">
+		<h1 id="RSG">Ready. Set. Go.</h1>
+		<p id="Guide">Creating a resume with <i>Resumate</i> is easy. Just fill the form on the left side of the screen, sumbit and a resume in PDF format is available for download immediately. It may not be perfect, but it is a good way to start. And we all need a good start.</p>
+	</div>
+</div>
+<div id="RightPanel">
+	<form action="/genRes" method="POST">
+		<div id="firstName">
+			<h4 id="firstName">First Name</h4>
+			<input type="text" id="firstName" name="firstName" value="" maxlength="30">
 		</div>
-		<div id="body">
-			<div class="container" id="LeftPanel">
-				<h1 id="RSG">Ready. Set. Go.</h1>
-				<p id="Guide">Creating a resume with <i>Resumate</i> is easy. Just fill the form on the left side of the screen, sumbit and a resume in PDF format is available for download immediately. It may not be perfect, but it is a good way to start. And we all need a good start.</p>
-			</div>
+		<div id="lastName">
+			<h4 id="lastName">Last Name</h4>
+			<input type="text" id="lastName" name="lastName" value="" maxlength="30">
 		</div>
-		<div class="container" id="RightPanel">
-			@helper.form(routes.Application.handleForm) {
-			<form role="form" data-toggle="validator" action="/genRes" method="POST">
-				<h3>Contact Information</h3>
-				<div class="form-group">
-					<label for="firstName">Full Name</label>
-					<input type="text" class="form-control" name="fullName" placeholder="Bob Bobman" maxlength="30" required>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-6">
-						<label for="emailAddress">Email Address</label>
-						<input type="email" class="form-control" name="emailAddress" placeholder="foo@@example.com" maxlength="30" required>
-					</div>
-					<div class="form-group col-md-6">
-						<label for="phoneNo">Phone Number</label>
-						<input type="tel" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" class="form-control" name="phoneNo" placeholder="(212) 555-1234" maxlength="30" required>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-4">
-						<label for="street">Street Address</label>
-						<input type="text" class="form-control" name="street" placeholder="1234 1st Ave." maxlength="40" required>
-					</div>
-					<div class="form-group col-md-4">
-						<label for="city">City/State</label>
-						<input type="text" class="form-control" name="city" placeholder="New York, NY" maxlength="40" required>
-					</div>
-					<div class="form-group col-md-4">
-						<label for="zip">Zip Code</label>
-						<input type="number" class="form-control" name="zip" placeholder="10001" maxlength="8" required>
-					</div>
-				</div>
-				<h3>Educational Experience</h3>
-				<div class="row">
-					<div class="form-group col-md-3">
-						<label for="dateRange1">Start/End Date</label>
-						<input type="text" class="school1 form-control" name="dateRange1" placeholder="Jan 1969 - Dec 2015" maxlength="22">
-					</div>
-					<div class="form-group col-md-3">
-						<label for="schoolName1">School Name</label>
-						<input type="text" class="school1 form-control" name="schoolName1" placeholder="University of Foo" maxlength="40">
-					</div>
-					<div class="form-group col-md-3">
-						<label for="schoolTitle1">Education Details</label>
-						<input type="text" class="school1 form-control" name="schoolTitle1" placeholder="BS of Engineering">
-					</div>
-					<div class="form-group col-md-3">
-						<div class="radio">
-							<label>
-								<input type="radio" name="schooladd1" id="schooladd1" value="true" checked>
-								Include in resume
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="schooladd1" id="schooldontadd1" value="false">
-								Exclude from resume
-							</label>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-3">
-						<label for="dateRange1"></label>
-						<input type="text" class="school2 form-control" name="dateRange2" placeholder="Jan 1969 - Dec 2015" maxlength="22" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<label for="schoolName1"></label>
-						<input type="text" class="school2 form-control" name="schoolName2" placeholder="University of Foo" maxlength="40" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<label for="schoolTitle1"></label>
-						<input type="text" class="school2 form-control" name="schoolTitle2" placeholder="BS of Engineering" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<div class="radio">
-							<label>
-								<input type="radio" name="schooladd2" id="schooladd2" value="true">
-								Include in resume
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="schooladd2" id="schooldontadd2" value="false" checked>
-								Exclude from resume
-							</label>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-3">
-						<label for="dateRange1"></label>
-						<input type="text" class="school3 form-control" name="dateRange3" placeholder="Jan 1969 - Dec 2015" maxlength="22" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<label for="schoolName1"></label>
-						<input type="text" class="school3 form-control" name="schoolName3" placeholder="University of Foo" maxlength="40" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<label for="schoolTitle1"></label>
-						<input type="text" class="school3 form-control" name="schoolTitle3" placeholder="BS of Engineering" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<div class="radio">
-							<label>
-								<input type="radio" name="schooladd3" id="schooladd3" value="true">
-								Include in resume
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="schooladd3" id="schooldontadd3" value="false" checked>
-								Exclude from resume
-							</label>
-						</div>
-					</div>
-				</div>
-
-				<h3>Professional Experience</h3>
-				<div class="row">
-					<div class="form-group col-md-3">
-						<label for="dateRangeExp1">Start/End Date</label>
-						<input type="text" class="exp1 form-control" name="dateRange4" placeholder="Jan 1969 - Dec 2015" maxlength="22">
-					</div>
-					<div class="form-group col-md-3">
-						<label for="expName1">Company Name</label>
-						<input type="text" class="exp1 form-control" name="expName1" placeholder="Foo Inc." maxlength="40">
-					</div>
-					<div class="form-group col-md-3">
-						<label for="expDesc1">Position Description</label>
-						<input type="text" class="exp1 form-control" name="expDesc1" placeholder="Engineer">
-					</div>
-					<div class="form-group col-md-3">
-						<div class="radio">
-							<label>
-								<input type="radio" name="expadd1" id="expadd1" value="true" checked>
-								Include in resume
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="expadd1" id="expdontadd1" value="false">
-								Exclude from resume
-							</label>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-3">
-						<label for="dateRangeExp2"></label>
-						<input type="text" class="exp2 form-control" name="dateRangeExp2" placeholder="Jan 1969 - Dec 2015" maxlength="22" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<label for="expName2"></label>
-						<input type="text" class="exp2 form-control" name="expName2" placeholder="Foo Inc." maxlength="40" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<label for="expDesc2"></label>
-						<input type="text" class="exp2 form-control" name="expDesc2" placeholder="Project Manager" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<div class="radio">
-							<label>
-								<input type="radio" name="expadd2" id="expadd2" value="true">
-								Include in resume
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="expadd2" id="expdontadd2" value="false" checked>
-								Exclude from resume
-							</label>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-3">
-						<label for="dateRangeExp3"></label>
-						<input type="text" class="exp3 form-control" name="dateRangeExp3" placeholder="Jan 1969 - Dec 2015" maxlength="22" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<label for="expName3"></label>
-						<input type="text" class="exp3 form-control" name="expName3" placeholder="Foo Inc." maxlength="40" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<label for="expDesc3"></label>
-						<input type="text" class="exp3 form-control" name="expDesc3" placeholder="Wizard" disabled>
-					</div>
-					<div class="form-group col-md-3">
-						<div class="radio">
-							<label>
-								<input type="radio" name="expadd3" id="expadd3" value="true">
-								Include in resume
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="expadd3" id="expdontadd3" value="false" checked>
-								Exclude from resume
-							</label>
-						</div>
-					</div>
-				</div>
-
-				<div class="row" style="text-align: center">
-					<button type="submit" value="Submit" class="btn btn-primary btn-lg">Create Resume</button>
-				</div>
-			</form>
-			}
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-
+		<div id="emailAddress">
+			<h4 id="emailAddress">Email Address</h4>
+			<input type="text" id="emailAddress" name="emailAddress" value="" type="email">
 		</div>
-	</body>
+		<div id="mobileNo">
+			<h4 id="mobileNo">Mobile Number</h4>
+			<input type="text" id="mobileNo" name="mobileNo" value="" maxlength="20">
+		</div>
+		<div id="address">
+			<h4 id="address">Address</h4>
+			<input type="text" id="address" name="address" value="" maxlength="40">
+		</div>
+		<div id="eduExp">
+			<h4 id="eduExp">Educational Experience</h4>
+			<textarea id="eduExp" name="eduExp" value=""></textarea>
+		</div>
+		<div id="workExp">
+			<h4 id="workExp">Job Experience</h4>
+			<textarea id="workExp" name="workExp" value=""></textarea>
+		</div>
+		<div id="submit">
+			<input id="submit" type="submit" value="Submit">
+		</div>
+	</form>
+
+</div>
+</body>
 </html>
